@@ -30,6 +30,7 @@
         <div class="hero-copy">
           <p class="eyebrow" data-i18n="heroEyebrow">GAME DESIGN PORTFOLIO</p>
           <h1 data-i18n="heroTitle">徐邦</h1>
+          <p class="hero-native" data-i18n="nativeName">徐邦 / ゲームデザイン</p>
           <p class="hero-lead" data-i18n="heroLead">
             面向日本大学修士申请的游戏设计作品集。关注机制设计、交互节奏、系统闭环与可玩的原型落地。
           </p>
@@ -77,18 +78,10 @@
         </div>
       </section>
 
-      <section class="section intro-strip" aria-label="portfolio summary">
-        <div>
-          <span class="section-kicker" data-i18n="summaryKicker">申请方向</span>
-          <strong data-i18n="summaryMajor">游戏设计</strong>
-        </div>
-        <div>
-          <span class="section-kicker" data-i18n="summaryWorks">项目数量</span>
-          <strong>4</strong>
-        </div>
-        <div>
-          <span class="section-kicker" data-i18n="summaryFormat">展示形式</span>
-          <strong data-i18n="summaryBlog">文章 + 图片</strong>
+      <section class="marquee-strip" aria-label="portfolio signal">
+        <div class="marquee-track">
+          <span>GAME DESIGN / UNITY / ROGUELIKE / RETRO UI / MULTILINGUAL / PIXEL MOTION / PORTFOLIO / JAPAN GRADUATE APPLICATION /</span>
+          <span>GAME DESIGN / UNITY / ROGUELIKE / RETRO UI / MULTILINGUAL / PIXEL MOTION / PORTFOLIO / JAPAN GRADUATE APPLICATION /</span>
         </div>
       </section>
 
@@ -137,11 +130,21 @@
       </section>
     </main>
 
+    <div class="project-modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="project-modal-backdrop" data-close-modal></div>
+      <section class="project-modal-panel" role="document">
+        <button class="modal-close" type="button" data-close-modal aria-label="Close">×</button>
+        <div id="projectModalContent"></div>
+      </section>
+    </div>
+
     <footer class="site-footer">
       <span>© 2026 Xu Bang</span>
       <span data-i18n="footerText">Static portfolio for GitHub Pages</span>
     </footer>
 
+    <script src="assets/data/site.js"></script>
+    <script src="assets/data/projects.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
