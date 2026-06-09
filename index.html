@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="徐邦 - 游戏设计作品集" />
+    <title>徐邦 | Game Design Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="home">
+        <span class="brand-mark">XB</span>
+        <span>TeaOrCoffee</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#works" data-i18n="navWorks">作品</a>
+        <a href="#profile" data-i18n="navProfile">关于</a>
+        <a href="#contact" data-i18n="navContact">联系</a>
+      </nav>
+      <div class="language-switch" aria-label="Language">
+        <button type="button" data-lang="zh" aria-pressed="true">中</button>
+        <button type="button" data-lang="ja" aria-pressed="false">日</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">GAME DESIGN PORTFOLIO</p>
+          <h1 data-i18n="heroTitle">徐邦</h1>
+          <p class="hero-lead" data-i18n="heroLead">
+            面向日本大学修士申请的游戏设计作品集。关注机制设计、交互节奏、系统闭环与可玩的原型落地。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#works" data-i18n="viewWorks">查看作品</a>
+            <a class="button ghost" href="mailto:TeaOrCoffee2024@163.com">TeaOrCoffee2024@163.com</a>
+          </div>
+          <div class="signal-row" aria-label="skills">
+            <span>Unity</span>
+            <span>Godot</span>
+            <span>C#</span>
+            <span>Game Design</span>
+          </div>
+        </div>
+
+        <div class="hero-model" aria-label="3D handheld placeholder">
+          <div class="model-stage" id="modelStage">
+            <div class="handheld-3d" id="handheldModel">
+              <div class="console-face">
+                <div class="speaker-grid">
+                  <i></i><i></i><i></i><i></i>
+                </div>
+                <div class="screen">
+                  <div class="scanline"></div>
+                  <div class="screen-title">PORTFOLIO_OS</div>
+                  <div class="screen-pixels">
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="dpad">
+                  <span></span><span></span>
+                </div>
+                <div class="buttons">
+                  <span>A</span>
+                  <span>B</span>
+                </div>
+              </div>
+              <div class="console-side side-right"></div>
+              <div class="console-side side-bottom"></div>
+            </div>
+          </div>
+          <p class="model-note" data-i18n="modelNote">可替换的 3D 掌机占位模型</p>
+        </div>
+      </section>
+
+      <section class="section intro-strip" aria-label="portfolio summary">
+        <div>
+          <span class="section-kicker" data-i18n="summaryKicker">申请方向</span>
+          <strong data-i18n="summaryMajor">游戏设计</strong>
+        </div>
+        <div>
+          <span class="section-kicker" data-i18n="summaryWorks">项目数量</span>
+          <strong>4</strong>
+        </div>
+        <div>
+          <span class="section-kicker" data-i18n="summaryFormat">展示形式</span>
+          <strong data-i18n="summaryBlog">文章 + 图片</strong>
+        </div>
+      </section>
+
+      <section class="section" id="works">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="worksEyebrow">SELECTED WORKS</p>
+          <h2 data-i18n="worksTitle">作品展示</h2>
+          <p data-i18n="worksLead">
+            四个项目以博客文章形式展示。点击作品会打开独立详情页，适合后续继续补充截图、视频、下载链接与反思文本。
+          </p>
+        </div>
+        <div class="works-grid" id="worksGrid"></div>
+      </section>
+
+      <section class="section profile-section" id="profile">
+        <div class="profile-main">
+          <p class="eyebrow" data-i18n="profileEyebrow">PROFILE</p>
+          <h2 data-i18n="profileTitle">徐邦</h2>
+          <p data-i18n="profileLead">
+            大四学生，申请方向为游戏设计。作品覆盖系统策划、Unity 原型、复古界面交互、多语言文本与可运行游戏开发。
+          </p>
+        </div>
+        <div class="profile-list">
+          <div>
+            <span data-i18n="profileDirection">申请方向</span>
+            <strong data-i18n="summaryMajor">游戏设计</strong>
+          </div>
+          <div>
+            <span data-i18n="profileSkills">技能栈</span>
+            <strong>Unity / Godot / C# / Office</strong>
+          </div>
+          <div>
+            <span>GitHub</span>
+            <strong><a href="https://github.com/jclx2023" target="_blank" rel="noreferrer">github.com/jclx2023</a></strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <p class="eyebrow" data-i18n="contactEyebrow">CONTACT</p>
+        <h2 data-i18n="contactTitle">联系</h2>
+        <div class="contact-links">
+          <a class="button primary" href="mailto:TeaOrCoffee2024@163.com">Email</a>
+          <a class="button ghost" href="https://github.com/jclx2023" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Xu Bang</span>
+      <span data-i18n="footerText">Static portfolio for GitHub Pages</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

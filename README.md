@@ -1,2 +1,1 @@
-# TeaOrCoffee
-Personal portfolio
+# TeaOrCoffee Portfolio
