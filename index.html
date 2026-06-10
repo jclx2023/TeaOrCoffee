@@ -47,34 +47,10 @@
         </div>
 
         <div class="hero-model" aria-label="3D handheld placeholder">
-          <div class="model-stage" id="modelStage">
-            <div class="handheld-3d" id="handheldModel">
-              <div class="console-face">
-                <div class="speaker-grid">
-                  <i></i><i></i><i></i><i></i>
-                </div>
-                <div class="screen">
-                  <div class="scanline"></div>
-                  <div class="screen-title">PORTFOLIO_OS</div>
-                  <div class="screen-pixels">
-                    <span></span><span></span><span></span><span></span>
-                    <span></span><span></span><span></span><span></span>
-                    <span></span><span></span><span></span><span></span>
-                  </div>
-                </div>
-                <div class="dpad">
-                  <span></span><span></span>
-                </div>
-                <div class="buttons">
-                  <span>A</span>
-                  <span>B</span>
-                </div>
-              </div>
-              <div class="console-side side-right"></div>
-              <div class="console-side side-bottom"></div>
-            </div>
+          <div class="model-stage gameboy-stage" id="modelStage">
+            <canvas class="gameboy-canvas" id="gameboyCanvas" aria-label="GameBoy 3D model"></canvas>
+            <div class="model-loading" id="modelLoading">LOADING OBJ</div>
           </div>
-          <p class="model-note" data-i18n="modelNote">可替换的 3D 掌机占位模型</p>
         </div>
       </section>
 
@@ -146,5 +122,14 @@
     <script src="assets/data/site.js"></script>
     <script src="assets/data/projects.js"></script>
     <script src="app.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="gameboy-model.js"></script>
   </body>
 </html>
