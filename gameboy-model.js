@@ -35,7 +35,7 @@ function initGameBoyModel() {
   const modelGroup = new THREE.Group();
   scene.add(modelGroup);
 
-  camera.position.set(0, 0.35, 6.4);
+  camera.position.set(0, 0.35, 8.8);
 
   const fallbackMaterials = [
     new THREE.MeshStandardMaterial({ color: 0xd9d2ae, roughness: 0.7, metalness: 0.05 }),
@@ -179,7 +179,7 @@ function initGameBoyModel() {
     drag.y += (drag.targetY - drag.y) * 0.12;
     modelGroup.rotation.y = Math.sin(seconds * 0.65) * 0.035 + drag.y;
     modelGroup.rotation.x = Math.sin(seconds * 0.5) * 0.025 + drag.x;
-    modelGroup.position.y = Math.sin(seconds * 1.3) * 0.08;
+    modelGroup.position.y = 0.58 + Math.sin(seconds * 1.3) * 0.08;
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
   }

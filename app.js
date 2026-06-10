@@ -270,8 +270,8 @@ function setupModelMotion() {
 
 function init() {
   setupLanguageSwitch();
-  setupModelMotion();
   setupProjectModal();
+  setupModelMotion();
   setLang(getLang());
 }
 

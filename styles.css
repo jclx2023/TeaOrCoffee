@@ -156,10 +156,18 @@ a.button {
 .hero {
   display: grid;
   min-height: calc(100vh - 68px);
-  grid-template-columns: minmax(0, 0.95fr) minmax(420px, 1.05fr);
+  grid-template-columns: repeat(12, minmax(0, 1fr));
   align-items: center;
-  gap: clamp(24px, 4vw, 64px);
-  padding: clamp(38px, 5vw, 70px) clamp(16px, 5vw, 64px) 34px;
+  column-gap: clamp(24px, 3.8vw, 96px);
+  row-gap: clamp(18px, 2.2vw, 34px);
+  padding: clamp(34px, 3.6vw, 64px) clamp(18px, 3.8vw, 86px) 28px;
+}
+
+.hero-copy {
+  grid-column: 1 / span 5;
+  align-self: center;
+  max-width: 820px;
+  z-index: 2;
 }
 
 .eyebrow,
@@ -290,15 +298,17 @@ h3,
 }
 
 .hero-model {
+  grid-column: 6 / -1;
   align-self: stretch;
   display: grid;
   place-items: center;
-  min-height: 560px;
+  min-height: min(94vh, 980px);
+  z-index: 1;
 }
 
 .model-stage {
-  width: min(92vw, 700px);
-  height: min(82vh, 680px);
+  width: min(60vw, 1320px);
+  height: min(96vh, 1180px);
   display: grid;
   place-items: center;
   perspective: 900px;
@@ -994,6 +1004,11 @@ h3,
   .project-hero,
   .profile-section {
     grid-template-columns: 1fr;
+  }
+
+  .hero-copy,
+  .hero-model {
+    grid-column: 1 / -1;
   }
 
   .works-grid {
