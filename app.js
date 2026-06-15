@@ -113,7 +113,7 @@ function closeProjectModal() {
   currentProjectId = null;
 }
 
-function renderMetaRow(meta, lang) {
+function renderMetaRow(meta, lang, project) {
   const labels = translations[lang] || {};
   const rows = [
     ["role", labels.role],
@@ -124,7 +124,14 @@ function renderMetaRow(meta, lang) {
 
   return rows
     .filter(([key]) => meta[key])
-    .map(([key, label]) => `<span class="meta-pill">${escapeHtml(label || key)}: ${escapeHtml(meta[key])}</span>`)
+    .map(([key, label]) => {
+      if (key === "status" && project?.action?.url) {
+        const actionLabel = textFor(project.action.label, lang, label || "Status");
+        return `<a class="meta-pill project-status-link" href="${escapeHtml(project.action.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(actionLabel)}</a>`;
+      }
+
+      return `<span class="meta-pill">${escapeHtml(label || key)}: ${escapeHtml(meta[key])}</span>`;
+    })
     .join("");
 }
 
@@ -225,7 +232,7 @@ function renderProjectModal(lang, id) {
         <p class="eyebrow">${escapeHtml(project.year || "")}</p>
         <h1 id="modalTitle">${escapeHtml(displayTitle)}</h1>
         ${subtitle ? `<p class="hero-lead">${escapeHtml(subtitle)}</p>` : ""}
-        <div class="meta-row">${renderMetaRow(meta, lang)}</div>
+        <div class="meta-row">${renderMetaRow(meta, lang, project)}</div>
       </div>
       <img class="project-visual" src="${escapeHtml(project.cover)}" alt="${escapeHtml(displayTitle)}">
     </section>

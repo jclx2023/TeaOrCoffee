@@ -297,6 +297,28 @@ h3,
   font-family: var(--text-font);
 }
 
+.project-status-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  background: var(--lime);
+  color: var(--ink);
+  text-decoration: none;
+  box-shadow: 4px 4px 0 var(--ink);
+  transition: transform 120ms steps(2, end), box-shadow 120ms steps(2, end), background 120ms steps(2, end);
+}
+
+.project-status-link:hover {
+  background: var(--cyan);
+  transform: translate(-2px, -2px) rotate(1deg);
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+.project-status-link:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 var(--ink);
+}
+
 .hero-model {
   grid-column: 6 / -1;
   align-self: stretch;

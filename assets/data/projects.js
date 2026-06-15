@@ -1,7 +1,7 @@
 window.PORTFOLIO_PROJECTS = [
   {
     id: "deep",
-    displayTitle: "DeepSea",
+    displayTitle: "Deep",
     year: "2024",
     cover: "assets/projects/deep/deep-ruins.webp",
     tags: ["Unity", "GDD", "Pixel Art", "Unfinished"],
@@ -38,9 +38,9 @@ window.PORTFOLIO_PROJECTS = [
         type: "text",
         title: { zh: "项目概述", ja: "概要", en: "Overview" },
         body: {
-          zh: ["DeepSea 是一个以海底文明、探索和生物生态为核心的未完成项目。现阶段作品集将其作为企划案展示，强调从 GDD、系统策划案、敌方生物策划案、道具表和概念 CG 中体现的设计能力。"],
-          ja: ["DeepSea は海底文明、探索、生態系を中心にした未完成プロジェクトです。ポートフォリオでは GDD、システム企画、敵設計、アイテム表、コンセプト CG を通じて設計力を示します。"],
-          en: ["DeepSea is an unfinished project built around underwater civilization, exploration, and creature ecology. In this portfolio it is presented as a design-document work, showing GDD structure, systems, enemy design, item sheets, and concept art."]
+          zh: ["Deep 是一个以海底文明、探索和生物生态为核心的未完成项目。现阶段作品集将其作为企划案展示，强调从 GDD、系统策划案、敌方生物策划案、道具表和概念 CG 中体现的设计能力。"],
+          ja: ["Deep は海底文明、探索、生態系を中心にした未完成プロジェクトです。ポートフォリオでは GDD、システム企画、敵設計、アイテム表、コンセプト CG を通じて設計力を示します。"],
+          en: ["Deep is an unfinished project built around underwater civilization, exploration, and creature ecology. In this portfolio it is presented as a design-document work, showing GDD structure, systems, enemy design, item sheets, and concept art."]
         }
       },
       {
@@ -56,9 +56,9 @@ window.PORTFOLIO_PROJECTS = [
         type: "gallery",
         title: { zh: "项目图片", ja: "画像", en: "Gallery" },
         images: [
-          { src: "assets/projects/deep/deep-ruins.webp", alt: "DeepSea ruins concept" },
-          { src: "assets/projects/deep/deep-creature.webp", alt: "DeepSea creature concept" },
-          { src: "assets/projects/deep/deep-depth.webp", alt: "DeepSea deep zone concept" }
+          { src: "assets/projects/deep/deep-ruins.webp", alt: "Deep ruins concept" },
+          { src: "assets/projects/deep/deep-creature.webp", alt: "Deep creature concept" },
+          { src: "assets/projects/deep/deep-depth.webp", alt: "Deep deep zone concept" }
         ]
       },
       {
@@ -77,6 +77,10 @@ window.PORTFOLIO_PROJECTS = [
     year: "2025",
     cover: "assets/projects/chinese/chinese-title.webp",
     tags: ["Unity", "Photon", "Multiplayer", "Language Game"],
+    action: {
+      url: "https://drive.google.com/file/d/1jCKNaUkbi4BF7_dBYgWY23Ml4jVMz2Aj/view?usp=drive_link",
+      label: { zh: "Demo", ja: "Demo", en: "Demo" }
+    },
     card: {
       zh: "将中文词汇测试转化为多人在线答题对抗，围绕填空、选择、判断、写字题和道具卡构建互动。",
       ja: "中国語語彙テストを、オンライン対戦型のクイズゲームへ発展させたプロジェクトです。",
@@ -149,6 +153,10 @@ window.PORTFOLIO_PROJECTS = [
     year: "2025-2026",
     cover: "assets/projects/windows-murder/recycle-blooded.webp",
     tags: ["Unity", "Detective", "Retro UI", "LLM Dialogue"],
+    action: {
+      url: "https://drive.google.com/file/d/17McOh7s4ag6gRttQV7RylrL7I1JcNTfF/view?usp=drive_link",
+      label: { zh: "WindowsMurder", ja: "WindowsMurder", en: "WindowsMurder" }
+    },
     card: {
       zh: "复古桌面模拟解谜游戏。玩家扮演管理员，在拟人化程序和文件中调查回收站被害案。",
       ja: "レトロなデスクトップを舞台にした推理ゲーム。管理者としてプログラムたちの証言を調査します。",
@@ -218,9 +226,13 @@ window.PORTFOLIO_PROJECTS = [
   {
     id: "clavaro",
     displayTitle: "Clavaro",
-    year: "2026",
+    year: "2025-2026",
     cover: "assets/projects/clavaro/clavaro-play.webp",
     tags: ["Unity", "Roguelike", "Deckbuilding", "Claw Machine"],
+    action: {
+      url: "https://drive.google.com/file/d/1-h4jtFkcxw6k6-Ydd2SLgbKjpCylJnVn/view?usp=drive_link",
+      label: { zh: "Clavaro", ja: "Clavaro", en: "Clavaro" }
+    },
     card: {
       zh: "把抓娃娃机的不确定物理手感与 Roguelike 构筑结合，围绕球池、遗物、商店和计分闭环设计。",
       ja: "クレーンゲームの物理的な不確定性と Roguelike 構築を組み合わせたプロジェクトです。",
