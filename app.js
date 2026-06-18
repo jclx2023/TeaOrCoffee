@@ -2,6 +2,7 @@ const site = window.PORTFOLIO_SITE || {};
 const projects = window.PORTFOLIO_PROJECTS || [];
 const translations = site.i18n || {};
 let currentProjectId = null;
+let activeImageZoom = null;
 
 function textFor(value, lang, fallback = "") {
   if (value == null) return fallback;
@@ -105,12 +106,95 @@ function openProject(id) {
 }
 
 function closeProjectModal() {
+  closeImageZoom(false);
   const modal = document.getElementById("projectModal");
   if (!modal) return;
   modal.classList.remove("is-open");
   modal.setAttribute("aria-hidden", "true");
   document.body.classList.remove("modal-open");
   currentProjectId = null;
+}
+
+function getZoomTargetRect(image, sourceRect) {
+  const naturalWidth = image.naturalWidth || sourceRect.width;
+  const naturalHeight = image.naturalHeight || sourceRect.height;
+  const ratio = naturalWidth / Math.max(naturalHeight, 1);
+  const maxWidth = window.innerWidth * 0.9;
+  const maxHeight = window.innerHeight * 0.86;
+  let width = maxWidth;
+  let height = width / ratio;
+
+  if (height > maxHeight) {
+    height = maxHeight;
+    width = height * ratio;
+  }
+
+  return {
+    left: (window.innerWidth - width) / 2,
+    top: (window.innerHeight - height) / 2,
+    width,
+    height
+  };
+}
+
+function applyZoomRect(image, rect) {
+  image.style.left = `${rect.left}px`;
+  image.style.top = `${rect.top}px`;
+  image.style.width = `${rect.width}px`;
+  image.style.height = `${rect.height}px`;
+}
+
+function openImageZoom(sourceImage) {
+  if (!sourceImage || activeImageZoom?.closing) return;
+  if (activeImageZoom) closeImageZoom(false);
+
+  const sourceRect = sourceImage.getBoundingClientRect();
+  const overlay = document.createElement("div");
+  const zoomImage = document.createElement("img");
+
+  overlay.className = "image-zoom-overlay";
+  overlay.setAttribute("role", "presentation");
+  zoomImage.className = "image-zoom-image";
+  zoomImage.src = sourceImage.currentSrc || sourceImage.src;
+  zoomImage.alt = sourceImage.alt || "";
+  applyZoomRect(zoomImage, sourceRect);
+
+  overlay.addEventListener("click", (event) => {
+    if (event.target === overlay) closeImageZoom();
+  });
+
+  overlay.appendChild(zoomImage);
+  document.body.appendChild(overlay);
+  document.body.classList.add("image-zoom-open");
+  activeImageZoom = { overlay, zoomImage, sourceImage, closing: false };
+
+  requestAnimationFrame(() => {
+    overlay.classList.add("is-open");
+    applyZoomRect(zoomImage, getZoomTargetRect(sourceImage, sourceRect));
+  });
+}
+
+function closeImageZoom(animate = true) {
+  if (!activeImageZoom || activeImageZoom.closing) return;
+
+  const { overlay, zoomImage, sourceImage } = activeImageZoom;
+  activeImageZoom.closing = true;
+  document.body.classList.remove("image-zoom-open");
+
+  const removeZoom = () => {
+    overlay.remove();
+    activeImageZoom = null;
+  };
+
+  if (!animate || !sourceImage.isConnected) {
+    removeZoom();
+    return;
+  }
+
+  overlay.classList.remove("is-open");
+  applyZoomRect(zoomImage, sourceImage.getBoundingClientRect());
+  zoomImage.addEventListener("transitionend", removeZoom, { once: true });
+  window.setTimeout(removeZoom, 420);
 }
 
 function renderMetaRow(meta, lang, project) {
@@ -164,7 +248,15 @@ function renderBlock(block, lang) {
       <section class="article-block project-block project-block-gallery">
         ${titleHtml}
         <div class="gallery">
-          ${(block.images || []).map((image) => `<img src="${escapeHtml(image.src)}" alt="${escapeHtml(textFor(image.alt, lang, image.alt || ""))}" loading="lazy">`).join("")}
+          ${(block.images || []).map((image) => {
+            const caption = textFor(image.caption, lang);
+            return `
+              <figure class="gallery-item">
+                <img src="${escapeHtml(image.src)}" alt="${escapeHtml(textFor(image.alt, lang, image.alt || ""))}" loading="lazy">
+                ${caption ? `<figcaption>${escapeHtml(caption)}</figcaption>` : ""}
+              </figure>
+            `;
+          }).join("")}
         </div>
       </section>
     `;
@@ -247,12 +339,26 @@ function setupLanguageSwitch() {
 }
 
 function setupProjectModal() {
+  const modal = document.getElementById("projectModal");
+
   document.querySelectorAll("[data-close-modal]").forEach((node) => {
     node.addEventListener("click", closeProjectModal);
   });
 
+  modal?.addEventListener("click", (event) => {
+    const image = event.target.closest("#projectModalContent img");
+    if (!image) return;
+    event.preventDefault();
+    openImageZoom(image);
+  });
+
   window.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && currentProjectId) closeProjectModal();
+    if (event.key !== "Escape") return;
+    if (activeImageZoom) {
+      closeImageZoom();
+      return;
+    }
+    if (currentProjectId) closeProjectModal();
   });
 }
 
