@@ -6,9 +6,9 @@ window.PORTFOLIO_PROJECTS = [
     cover: "assets/projects/deep/deep-ruins.webp",
     tags: ["Unity", "GDD", "Pixel Art", "Unfinished"],
     card: {
-      zh: "以深海探索为主题的像素风动作冒险企划，重点展示世界观、系统、敌方生物与数值表设计。",
-      ja: "深海探索をテーマにしたピクセルアート系アクションアドベンチャー企画です。",
-      en: "A pixel-art action adventure concept about deep-sea exploration, ecology, and underwater ruins."
+      zh: "深海探索题材的像素风动作冒险企划，内容包括世界观设定、区域推进、敌方生物与数值表设计。",
+      ja: "深海探索を題材にしたピクセルアート系アクションアドベンチャー企画。世界観、エリア進行、敵生態、数値表を整理しています。",
+      en: "A pixel-art action adventure concept for deep-sea exploration, with worldbuilding, area progression, enemy ecology, and balance tables."
     },
     meta: {
       zh: {
@@ -19,14 +19,14 @@ window.PORTFOLIO_PROJECTS = [
         tools: "Unity / Word / Excel"
       },
       ja: {
-        subtitle: "未完成プロジェクト / 企画書展示",
+        subtitle: "未完成プロジェクト / 企画書資料",
         role: "システム企画、GDD、レベルと敵キャラクター設計",
         status: "詳細資料は後日追加予定",
         platform: "PC プロトタイプ",
         tools: "Unity / Word / Excel"
       },
       en: {
-        subtitle: "Unfinished project / Design document showcase",
+        subtitle: "Unfinished project / Design document",
         role: "System design, GDD, level and enemy design",
         status: "Detailed materials pending",
         platform: "PC prototype",
@@ -39,16 +39,16 @@ window.PORTFOLIO_PROJECTS = [
         title: { zh: "项目概述", ja: "概要", en: "Overview" },
         body: {
           zh: [
-            "Deep 是一个以海底文明、遗迹探索和深海生态为核心的未完成项目。目前在作品集中仍以企划案形式保留，主要展示我在世界观设定、区域推进、敌方生态、道具表和数值表方面的早期设计能力。",
-            "由于 Deep 的新图片和详细资料尚未整理，本次更新暂不扩写该项目，避免用不完整资料造成误导。后续整理完成后，可以单独把它改成完整项目页。"
+            "Deep 是一份围绕海底文明、遗迹探索和深海生态展开的动作冒险企划。目前项目以设计文档形式呈现，记录世界观设定、区域推进、敌方生态、道具表和数值表等早期设计内容。",
+            "该项目尚未进入完整原型阶段，因此页面以现有企划材料为主，保留概念图、系统方向和设计范围，不对未完成玩法做额外包装。"
           ],
           ja: [
-            "Deep は、海底文明、遺跡探索、深海生態を中心にした未完成プロジェクトです。現在は企画書形式で、世界観、エリア進行、敵生態、アイテム表、数値表の設計を示しています。",
-            "新しい資料はまだ整理中のため、今回は大きく変更せず、後日完成した資料で拡張する前提にしています。"
+            "Deep は、海底文明、遺跡探索、深海生態を扱うアクションアドベンチャー企画です。現在は設計文書として、世界観、エリア進行、敵生態、アイテム表、数値表を整理しています。",
+            "まだ完全なプロトタイプ段階には入っていないため、このページでは既存の企画資料、コンセプト画像、システム方針、設計範囲を中心に掲載しています。"
           ],
           en: [
-            "Deep is an unfinished project built around underwater civilization, ruins, and creature ecology. It is currently kept as a design-document showcase, presenting worldbuilding, area progression, enemy ecology, item sheets, and balance-table planning.",
-            "Because the updated Deep materials have not been organized yet, this pass intentionally keeps the page concise and avoids overstating unfinished evidence."
+            "Deep is an action adventure concept about underwater civilization, ruin exploration, and deep-sea ecology. The current page presents design-document material, including worldbuilding, area progression, enemy ecology, item sheets, and balance-table planning.",
+            "The project has not reached a full prototype stage, so the page focuses on existing concept material, system direction, and design scope."
           ]
         }
       },
@@ -57,16 +57,16 @@ window.PORTFOLIO_PROJECTS = [
         title: { zh: "设计意图", ja: "設計意図", en: "Design Intent" },
         body: {
           zh: [
-            "Deep 以深海探索为核心，把未知生态、遗迹文明和环境危险组织成一个逐层展开的世界。玩家随着下潜深度增加，遇到新的生物、资源、区域和威胁，并在探索过程中慢慢理解这片海域的规则。",
-            "相比直接讲述环保主题，这个企划更希望通过冒险体验让玩家产生兴趣。深海的美丽、压迫感和脆弱性会通过生物设计、区域推进和资源系统呈现，让环境议题自然融入游玩过程。"
+            "Deep 的关卡推进以潜入深度为主轴。不同深度对应生物类型、资源分布、环境风险和遗迹信息，玩家通过探索逐步建立对海域规则的理解。",
+            "环保主题通过资源稀缺、生态关系和区域压力呈现。玩家在推进过程中需要权衡探索收益、风险暴露和补给消耗。"
           ],
           ja: [
-            "Deep は、深海探索を軸に、未知の生態、遺跡文明、環境の危険を段階的に見せていく企画です。プレイヤーは深く潜るほど、新しい生物、資源、エリア、脅威に出会い、探索を通して海域のルールを理解していきます。",
-            "環境保護のテーマを直接説明するのではなく、冒険の体験として興味を持たせることを意識しました。深海の美しさ、圧迫感、脆さを、生物設計、エリア進行、資源システムの中に自然に組み込むことを目指しています。"
+            "Deep のエリア進行は潜行深度を軸に設計しています。深度ごとに生物、資源、環境リスク、遺跡情報を変え、探索を通して海域のルールを理解できる構成にしています。",
+            "環境テーマは、資源の不足、生態関係、エリアごとの圧力として扱います。プレイヤーは探索報酬、危険への露出、補給消費を判断しながら進行します。"
           ],
           en: [
-            "Deep is built around deep-sea exploration, using unknown ecology, ruined civilization, and environmental danger to create a world that opens up layer by layer. As players dive deeper, they encounter new creatures, resources, areas, and threats while gradually learning the rules of the ocean.",
-            "Rather than explaining environmental protection directly, the concept uses adventure to build curiosity. The beauty, pressure, and fragility of the deep sea are meant to emerge through creature design, area progression, and resource systems."
+            "Deep uses diving depth as the main structure for progression. Each depth layer changes the creature set, resource distribution, environmental risk, and ruin information, so players learn the rules of the sea through exploration.",
+            "The environmental theme is handled through resource scarcity, ecological relationships, and area pressure. Progression asks the player to weigh exploration rewards, exposure to danger, and supply consumption."
           ]
         }
       },
@@ -104,9 +104,9 @@ window.PORTFOLIO_PROJECTS = [
       label: { zh: "Demo", ja: "Demo", en: "Demo" }
     },
     card: {
-      zh: "将中文词汇练习改造成多人在线答题游戏，围绕房间同步、题型反馈、角色表现和道具干扰组织完整流程。",
-      ja: "中国語語彙練習をオンライン対戦型クイズゲームに再構成したプロジェクトです。",
-      en: "A multiplayer Chinese vocabulary game built around rooms, synchronized quiz flow, character presentation, and item-card disruption."
+      zh: "多人在线中文词汇答题原型，围绕房间同步、题型反馈、角色表现和道具干扰组织完整对局流程。",
+      ja: "オンライン対戦型の中国語語彙クイズ原型。ルーム同期、問題フィードバック、キャラクター表示、アイテムカードを一連の対局フローに組み込んでいます。",
+      en: "A multiplayer Chinese vocabulary quiz prototype with room synchronization, question feedback, character presentation, and item-card disruption."
     },
     meta: {
       zh: {
@@ -137,16 +137,16 @@ window.PORTFOLIO_PROJECTS = [
         title: { zh: "项目概述", ja: "概要", en: "Overview" },
         body: {
           zh: [
-            "ChineseLesson 的目标是把传统中文词汇测试从单人练习页面转化为多人在线对抗体验。玩家进入大厅、创建或加入房间、等待准备、进入课堂场景答题，并通过道具卡影响自己或对手的答题节奏。",
-            "项目把“学习内容”拆成可游戏化的交互节点：题目展示、作答输入、正确/错误反馈、倒计时压力、玩家状态、道具使用和房间同步。相比只展示题库或菜单，它更强调一套从进入游戏到完成对局的完整可运行流程。"
+            "ChineseLesson 是一款多人在线中文词汇答题原型。玩家从大厅进入房间，完成准备后进入课堂场景答题，并通过道具卡影响自己或对手的答题节奏。",
+            "项目将词汇练习拆分为题目展示、作答输入、正确/错误反馈、倒计时、玩家状态、道具使用和房间同步等节点，目标是完成从匹配到结算的可运行对局流程。"
           ],
           ja: [
-            "ChineseLesson は、従来の中国語語彙テストを、オンライン対戦型のゲーム体験へ拡張することを目標にしたプロジェクトです。ロビー、ルーム、準備、授業シーン、回答、アイテムカードを一つの流れとして実装しました。",
-            "学習内容を、問題表示、回答入力、フィードバック、制限時間、プレイヤー状態、カード使用、ルーム同期といったゲーム的な接点に分解しています。"
+            "ChineseLesson は、オンライン対戦型の中国語語彙クイズ原型です。プレイヤーはロビーからルームに入り、準備完了後に授業シーンで問題に回答し、アイテムカードで自分や相手の回答テンポに干渉します。",
+            "語彙練習を、問題表示、回答入力、正誤フィードバック、制限時間、プレイヤー状態、カード使用、ルーム同期に分解し、マッチングから対局終了まで動く流れとして実装しています。"
           ],
           en: [
-            "ChineseLesson turns Chinese vocabulary practice into a multiplayer game loop. Players move through the main menu, lobby, room-ready state, classroom gameplay, answer input, and card usage while the session stays synchronized online.",
-            "The project breaks learning into playable touchpoints: question display, input, feedback, time pressure, player state, item cards, and room synchronization. Its focus is a complete playable flow rather than an isolated quiz screen."
+            "ChineseLesson is a multiplayer Chinese vocabulary quiz prototype. Players enter a room from the lobby, ready up, answer questions in a classroom scene, and use item cards to affect their own pace or disrupt opponents.",
+            "The quiz flow is split into question display, answer input, right/wrong feedback, timer pressure, player state, card usage, and room synchronization. The goal is a playable match flow from entry to result."
           ]
         }
       },
@@ -155,16 +155,16 @@ window.PORTFOLIO_PROJECTS = [
         title: { zh: "设计意图", ja: "設計意図", en: "Design Intent" },
         body: {
           zh: [
-            "ChineseLesson 把词汇练习设计成适合多人联机和直播观看的派对答题游戏。它不把学习内容当作静态题库，而是通过课堂场景、限时回答、玩家状态和道具干扰，让语言知识变成一连串可互动、可出错、也容易制造气氛的游戏行为。",
-            "项目灵感来自直播中常见的轻松失误：答错简单词汇、想不起汉字、在基础问题上犹豫。这类瞬间既有娱乐性，也反映了现代人对手写和传统语言知识的疏离。因此游戏希望让玩家在竞争和笑声中自然复习词汇与汉字。"
+            "ChineseLesson 的设计方向是把词汇练习做成适合联机对抗和直播观看的派对答题。课堂场景、限时作答、玩家状态和道具干扰共同控制节奏，使学习内容具备可观察的失败点和反转空间。",
+            "题型设计参考了直播中常见的语言失误场景，例如写不出常用汉字、误判基础词义、在限时压力下犹豫。项目利用这些可识别的错误制造对局反馈，同时保留词汇复习的功能。"
           ],
           ja: [
-            "ChineseLesson は、語彙練習をオンライン対戦や配信に向いたパーティークイズとして設計した作品です。学習内容を静的な問題集として扱うのではなく、教室の場面、制限時間、プレイヤー状態、アイテムカードを通して、言語知識をインタラクティブな行動に変換しています。",
-            "着想は、配信者が簡単な単語や漢字、基礎問題で迷う場面から得ました。そうした小さな失敗は見ている側にも伝わりやすく、場を盛り上げます。同時に、スマートフォンや変換機能に慣れた現代人が、手書きや語彙への意識から離れていることも感じました。ゲームの中で笑いながら語彙や漢字を復習できる形を目指しています。"
+            "設計方針は、語彙練習をオンライン対戦と配信視聴に向いたパーティークイズとして成立させることです。授業シーン、制限時間、プレイヤー状態、アイテムカードでテンポを管理し、失敗や逆転が観客にも伝わる構成にしています。",
+            "問題形式は、配信中によく起きる言語ミスを参考にしています。よく使う漢字が書けない、基本語彙を取り違える、制限時間で迷う、といった場面を対局フィードバックに利用し、語彙復習の機能も残しています。"
           ],
           en: [
-            "ChineseLesson turns vocabulary practice into a party quiz game designed for online multiplayer and livestream viewing. Instead of presenting learning as a static question bank, it uses a classroom setting, timed answers, player states, and item-card interference to make language knowledge interactive, error-prone, and entertaining.",
-            "The idea came from small, funny mistakes often seen in streams: forgetting a simple word, failing to write a character, or hesitating on a basic question. Those moments are easy for viewers to understand and react to, while also reflecting how modern input tools distance people from handwriting and traditional language knowledge. The game aims to let players review vocabulary and characters through competition and laughter."
+            "ChineseLesson treats vocabulary practice as a party quiz for online matches and livestream viewing. The classroom scene, timed answers, player states, and item cards control the pace and create visible failure points and comeback moments.",
+            "The question design references language mistakes often seen during streams: missing a common character, misreading a basic word, or hesitating under time pressure. These mistakes create match feedback while keeping the vocabulary review function intact."
           ]
         }
       },
@@ -223,16 +223,16 @@ window.PORTFOLIO_PROJECTS = [
         },
         body: {
           zh: [
-            "项目不只停留在答题 UI，还尝试把课堂主题具象化为角色与空间。学生、老师和课堂背景共同承担视觉识别功能，让玩家能快速理解当前处于“语文课堂”的游戏语境。",
-            "角色制作流程包含参考图整理、Blender 模型查看与调整、Unity 场景导入和 UI 层级整合。这里展示的不是最终美术炫技，而是从设计参考到引擎落地的完整制作证据。"
+            "角色与场景用于强化课堂语境。学生、老师和教室背景承担视觉识别功能，帮助玩家快速判断当前的答题环境、角色状态和对局阶段。",
+            "制作流程包括参考图整理、Blender 模型检查与调整、Unity 场景导入和 UI 层级整合。页面展示重点放在资产从设计参考到引擎落地的过程证据。"
           ],
           ja: [
-            "クイズ UI だけでなく、教室というテーマをキャラクターと空間で表現しています。",
-            "参考画像、Blender モデル、Unity への導入、UI 階層の整理まで、制作過程を確認できる構成にしています。"
+            "キャラクターと教室空間は、現在の回答環境、プレイヤー状態、対局フェーズを読み取りやすくするために配置しています。",
+            "制作工程は、参考画像の整理、Blender モデルの確認と調整、Unity への導入、UI 階層の整理までを含みます。ページでは、デザイン参考からエンジン実装までの過程を確認できるようにしています。"
           ],
           en: [
-            "The project does more than present quiz UI. It uses students, a teacher, and a classroom space to give the language-learning system a clear in-world context.",
-            "The production flow includes reference collection, Blender model inspection, Unity import, and UI hierarchy integration, showing how visual direction was brought into the engine."
+            "Characters and classroom space define the quiz context. Students, the teacher, and the room background help players read the answer environment, character state, and match phase.",
+            "The production flow includes reference collection, Blender model checks and adjustments, Unity import, and UI hierarchy integration. The page focuses on evidence from design reference to engine implementation."
           ]
         }
       },
@@ -270,9 +270,9 @@ window.PORTFOLIO_PROJECTS = [
       label: { zh: "WindowsMurder", ja: "WindowsMurder", en: "WindowsMurder" }
     },
     card: {
-      zh: "发生在复古桌面系统中的推理解谜游戏。玩家通过程序角色、弹窗、文件与 LLM 对话调查回收站被害案。",
-      ja: "レトロなデスクトップ上で展開する推理ゲームです。プログラム、ポップアップ、ファイル、LLM 会話から事件を調査します。",
-      en: "A retro desktop detective game where programs, pop-ups, files, and LLM dialogue become clues in a murder case."
+      zh: "复古桌面系统题材的推理解谜游戏。玩家通过程序角色、弹窗、文件和 LLM 对话调查回收站被害案。",
+      ja: "レトロなデスクトップ環境を使った推理ゲーム。プログラム、ポップアップ、ファイル、LLM 会話を手がかりとして扱います。",
+      en: "A retro desktop detective game that uses programs, pop-ups, files, and LLM dialogue as investigation material."
     },
     meta: {
       zh: {
@@ -303,16 +303,16 @@ window.PORTFOLIO_PROJECTS = [
         title: { zh: "项目概述", ja: "概要", en: "Overview" },
         body: {
           zh: [
-            "WindowsMurder 把玩家熟悉的桌面系统改造成推理解谜空间。回收站被害后，玩家以管理员身份进入类 Windows XP 的虚拟桌面，通过开始菜单、桌面图标、文件夹、弹窗、程序证言和系统异常逐步还原事件。",
-            "项目的核心不是复刻操作系统，而是把操作系统界面当成叙事和谜题容器：每个程序都可以是角色，每个文件都可能是线索，每个看似普通的错误提示都可能成为证词的一部分。后期还加入 LLM 对话阶段，让玩家用自然语言向程序角色追问。"
+            "WindowsMurder 将类 Windows XP 桌面作为推理解谜场景。回收站被害后，玩家以管理员身份进入虚拟桌面，通过开始菜单、桌面图标、文件夹、弹窗、程序证言和系统异常还原事件。",
+            "系统界面承担叙事和谜题功能。程序被设定为角色，文件用于承载证据，错误提示可触发证词线索；后期阶段加入 LLM 对话，让玩家用自然语言向程序角色追问线索。"
           ],
           ja: [
-            "WindowsMurder は、見慣れたデスクトップ環境を推理ゲームの舞台に変換したプロジェクトです。プレイヤーは管理者として、Windows XP 風の仮想デスクトップ上で事件を調査します。",
-            "OS を単純に再現するのではなく、デスクトップ UI を物語と謎解きの器として使っています。プログラムはキャラクターになり、ファイルやエラー表示は手がかりになります。"
+            "WindowsMurder は、Windows XP 風の仮想デスクトップを推理ゲームの場面として使用します。回収箱が被害に遭った後、プレイヤーは管理者として入り、スタートメニュー、アイコン、フォルダ、ポップアップ、プログラム証言、システム異常を調査します。",
+            "デスクトップ UI は、物語と謎解きの機能を持ちます。プログラムはキャラクターとして扱い、ファイルは証拠を保持し、エラー表示は証言の発生点になります。後半では LLM 会話を追加し、自然言語でプログラムキャラクターに質問できます。"
           ],
           en: [
-            "WindowsMurder transforms a familiar desktop operating system into a detective puzzle space. After Recycle Bin is murdered, the player enters a Windows XP-like virtual desktop as an administrator and investigates menus, icons, folders, pop-ups, program testimony, and system anomalies.",
-            "The project is not just an OS imitation. It treats desktop UI as a narrative and puzzle container: programs become characters, files become evidence, and error messages can become testimony. A later stage introduces LLM dialogue so the player can question software characters in natural language."
+            "WindowsMurder uses a Windows XP-like virtual desktop as a detective puzzle space. After Recycle Bin is murdered, the player enters as an administrator and investigates the start menu, icons, folders, pop-ups, program testimony, and system anomalies.",
+            "The desktop UI carries narrative and puzzle functions. Programs act as characters, files hold evidence, and error messages can trigger testimony. A later stage adds LLM dialogue so the player can question software characters in natural language."
           ]
         }
       },
@@ -321,16 +321,16 @@ window.PORTFOLIO_PROJECTS = [
         title: { zh: "设计意图", ja: "設計意図", en: "Design Intent" },
         body: {
           zh: [
-            "WindowsMurder 的核心是把玩家熟悉的桌面操作变成推理解谜的一部分。打开文件夹、查看弹窗、阅读错误提示、和程序角色对话，这些日常电脑行为在游戏中被重新组织成调查动作，让玩家几乎不需要额外学习就能进入案件。",
-            "LLM 对话被放在这个系统里，是因为程序 NPC 本身就很适合“可交流的软件”这一设定。玩家可以用自己的语言追问线索，而游戏仍通过角色身份、信息范围和剧情条件控制体验节奏。这让作品不仅是桌面风格的侦探游戏，也带有对 AI 与软件人格化的思考。"
+            "设计重点是把常见桌面操作转化为调查动作。打开文件夹对应证据检索，查看弹窗对应事件触发，阅读错误提示对应线索识别，和程序角色对话对应询问证人。",
+            "LLM 对话服务于程序角色设定。玩家可以自由组织问题，系统则通过角色身份、可知信息和剧情条件限制回答范围，避免开放对话破坏推理节奏。"
           ],
           ja: [
-            "WindowsMurder の中心は、プレイヤーが慣れているデスクトップ操作を推理行動に変えることです。フォルダを開く、ポップアップを見る、エラー表示を読む、プログラムキャラクターと会話する、といった日常的な操作を調査の流れとして再構成しています。",
-            "LLM 会話は、プログラム NPC を「話せるソフトウェア」として扱うための仕組みです。プレイヤーは自分の言葉で手がかりを聞くことができますが、キャラクターの役割、情報範囲、進行条件によってゲームとしてのテンポも保つように設計しました。デスクトップ推理ゲームであると同時に、AI とソフトウェアの人格化について考える作品でもあります。"
+            "設計の中心は、一般的なデスクトップ操作を調査行動に置き換えることです。フォルダを開く操作は証拠確認、ポップアップ確認はイベント発生、エラー表示の読解は手がかりの特定、プログラムとの会話は聞き込みとして機能します。",
+            "LLM 会話はプログラムキャラクターの設定に合わせて配置しています。プレイヤーは自由な文章で質問できますが、役割、所持情報、進行条件によって回答範囲を制限し、推理のテンポが崩れないようにしています。"
           ],
           en: [
-            "WindowsMurder turns familiar desktop actions into part of the detective process. Opening folders, checking pop-ups, reading error messages, and talking to program characters are everyday computer behaviors, but here they become investigation tools that let players enter the case with very little extra explanation.",
-            "LLM dialogue fits the setting because program NPCs already suggest the idea of software that can speak back. Players can ask questions in their own words, while character roles, information boundaries, and story conditions keep the experience paced like a game. The result is a desktop detective game that also reflects on AI and the personification of software."
+            "The design maps common desktop actions to investigation actions. Opening folders is evidence retrieval, checking pop-ups is event discovery, reading error messages is clue identification, and talking to program characters is witness questioning.",
+            "LLM dialogue supports the program-character setup. Players can write their own questions, while role, knowledge range, and story conditions limit the answers so open dialogue does not break the deduction rhythm."
           ]
         }
       },
@@ -351,7 +351,7 @@ window.PORTFOLIO_PROJECTS = [
           {
             src: "assets/projects/windows-murder/windows-shader-notes.webp",
             alt: "WindowsMurder shader notes",
-            caption: { zh: "视觉处理记录：让界面更接近旧系统观感", ja: "画面処理メモ", en: "Shader notes for the retro-system look" }
+            caption: { zh: "视觉处理记录：旧系统界面质感调整", ja: "画面処理メモ", en: "Shader notes for the retro-system look" }
           }
         ]
       },
@@ -400,16 +400,16 @@ window.PORTFOLIO_PROJECTS = [
         },
         body: {
           zh: [
-            "WindowsMurder 的角色并不是传统人物，而是被拟人化的软件与系统部件。回收站、控制面板、注册表、记事本、浏览器、下载工具等都被设计成可对话、可怀疑、可提供线索的对象。",
-            "这种角色设计让“桌面操作”自然变成“侦探行动”：打开程序像进入审讯，查看文件像查阅证物，系统弹窗像突然出现的新证词。角色图标保持低分辨率和旧系统质感，以强化复古桌面的可信度。"
+            "WindowsMurder 的角色来自软件和系统部件。回收站、控制面板、注册表、记事本、浏览器和下载工具被设计为可对话、可怀疑、可提供线索的调查对象。",
+            "程序角色将桌面操作转化为推理行为：打开程序对应询问，查看文件对应查验证物，系统弹窗对应新增证词。角色图标保留低分辨率和旧系统质感，以维持复古桌面的可信度。"
           ],
           ja: [
-            "WindowsMurder のキャラクターは人間ではなく、擬人化されたソフトウェアとシステム部品です。",
-            "プログラムを開く行為が尋問になり、ファイル確認が証拠調査になり、ポップアップが新しい証言になります。"
+            "WindowsMurder のキャラクターは、ソフトウェアとシステム部品をもとにしています。回収箱、コントロールパネル、レジストリ、メモ帳、ブラウザ、ダウンロードツールを、会話、疑い、証言の対象として扱います。",
+            "プログラムを開く操作は聞き込み、ファイル確認は証拠調査、ポップアップは新しい証言として機能します。低解像度のアイコンと旧 OS 風の質感で、レトロなデスクトップの説得力を保っています。"
           ],
           en: [
-            "The characters in WindowsMurder are personified software and system components rather than traditional people. Recycle Bin, Control Panel, Registry, Notepad, browsers, and download tools can all speak, hide information, or become suspects.",
-            "This character approach turns desktop operation into detective action: opening a program becomes interrogation, checking files becomes evidence review, and pop-ups become sudden testimony."
+            "WindowsMurder uses software and system components as characters. Recycle Bin, Control Panel, Registry, Notepad, browsers, and download tools can speak, withhold information, or become suspects.",
+            "Program characters map desktop operation to deduction: opening a program is questioning, checking files is evidence review, and pop-ups can introduce new testimony. Low-resolution icons and old-system styling keep the desktop setting consistent."
           ]
         }
       }
@@ -426,9 +426,9 @@ window.PORTFOLIO_PROJECTS = [
       label: { zh: "Clavaro", ja: "Clavaro", en: "Clavaro" }
     },
     card: {
-      zh: "把抓娃娃机的物理不确定性和 Roguelike 构筑结合，围绕抓取、结算、商店、球池与遗物形成循环。",
-      ja: "クレーンゲームの不確定性と Roguelike 構築を組み合わせたプロジェクトです。",
-      en: "A roguelike claw-machine game built around grabbing, scoring, shop choices, ball-pool building, and relic synergies."
+      zh: "抓娃娃机物理操作与 Roguelike 构筑结合的原型，围绕抓取、结算、商店、球池和遗物建立循环。",
+      ja: "クレーンゲームの物理操作と Roguelike 構築を組み合わせた原型。キャッチ、精算、ショップ、ボールプール、レリックでループを構成しています。",
+      en: "A claw-machine and roguelike prototype with a loop based on grabbing, scoring, shop choices, ball-pool editing, and relic triggers."
     },
     meta: {
       zh: {
@@ -459,16 +459,16 @@ window.PORTFOLIO_PROJECTS = [
         title: { zh: "项目概述", ja: "概要", en: "Overview" },
         body: {
           zh: [
-            "Clavaro 的核心想法是把抓娃娃机的手感和 Roguelike 构筑结合起来。玩家不是直接选择卡牌出牌，而是控制钩爪从球池中抓取不同功能的小球，再通过结算、商店、遗物和球池调整逐步构筑自己的得分路线。",
-            "项目的难点在于平衡“物理抓取的不确定性”和“策略构筑的可控性”。如果完全随机，玩家会失去策略感；如果完全可控，抓娃娃机的紧张感又会消失。因此系统围绕抓取次数、目标分数、基础分球、倍率球、特殊球、商店刷新和遗物触发建立长期循环。"
+            "Clavaro 将抓娃娃机的物理操作引入 Roguelike 构筑。玩家控制钩爪从球池中抓取不同功能的小球，再通过结算、商店、遗物和球池调整建立得分路线。",
+            "系统需要同时保留抓取的不确定性和构筑的可规划性。抓取次数、目标分数、基础分球、倍率球、特殊球、商店刷新和遗物触发共同构成长期循环。"
           ],
           ja: [
-            "Clavaro は、クレーンゲームの手触りと Roguelike 構築を組み合わせたプロジェクトです。プレイヤーはボールを掴み、精算、ショップ、レリック、ボールプール調整を通じて得点ルートを構築します。",
-            "物理的な不確定性と戦略的な制御感のバランスが中心課題です。ランダムすぎると戦略が弱くなり、制御しすぎるとクレーンゲームらしさが失われます。"
+            "Clavaro は、クレーンゲームの物理操作を Roguelike 構築に取り入れた原型です。プレイヤーはクレーンで機能の異なるボールを掴み、精算、ショップ、レリック、ボールプール調整を通じて得点ルートを作ります。",
+            "システムでは、キャッチの不確定性と構築の計画性を同時に扱います。キャッチ回数、目標点、基礎点ボール、倍率ボール、特殊ボール、ショップ更新、レリック発動が長期ループを構成します。"
           ],
           en: [
-            "Clavaro combines claw-machine control with roguelike construction. Instead of directly playing cards, the player controls a claw, grabs balls with different scoring functions, and develops a build through settlement, shops, relics, and ball-pool editing.",
-            "The main design problem is balancing physical uncertainty with strategic control. Too much randomness removes planning; too much control removes the tension of a claw machine. The loop is built around grabs, target score, base balls, multipliers, special balls, shop rerolls, and relic triggers."
+            "Clavaro brings claw-machine control into a roguelike build structure. The player controls a claw, grabs balls with different scoring functions, then builds a scoring route through settlement, shops, relics, and ball-pool editing.",
+            "The system keeps physical uncertainty and strategic planning in the same loop. Grab count, target score, base-score balls, multipliers, special balls, shop rerolls, and relic triggers define the long-term progression."
           ]
         }
       },
@@ -477,16 +477,13 @@ window.PORTFOLIO_PROJECTS = [
         title: { zh: "设计意图", ja: "設計意図", en: "Design Intent" },
         body: {
           zh: [
-            "Clavaro 试图把抓娃娃机的紧张感变成可构筑的 Roguelike 循环。玩家每次抓取都带有不确定性，但分数结算、球池调整、商店选择和遗物效果会把这些结果继续转化为下一轮策略。",
-            "项目明显受到 Balatro 的影响：简单规则、强反馈、数值增长和连锁效果共同制造爽感。Clavaro 没有直接沿用卡牌形式，而是用抓取动作和球池构筑来承载类似的节奏，让“运气”和“我做出的选择”同时影响结果。"
+            "项目参考了 Balatro 的短回合节奏、数值增长和连锁反馈，但交互载体改为钩爪操作与球池构筑。结果由抓取表现、球体组合和遗物触发共同决定。"
           ],
           ja: [
-            "Clavaro は、クレーンゲームの緊張感を Roguelike 的な構築ループに変換することを目指した作品です。毎回のキャッチには不確定性がありますが、得点計算、ボールプール調整、ショップ選択、レリック効果によって、その結果が次の戦略につながります。",
-            "設計には Balatro からの影響があります。シンプルなルール、強いフィードバック、数値の伸び、効果の連鎖が爽快感を作る点に強く惹かれました。Clavaro ではカード形式をそのまま使うのではなく、掴む行為とボールプール構築によって、運と選択が同時に結果へ影響するリズムを作ろうとしています。"
+            "Balatro からは、短いラウンド、数値成長、効果連鎖のテンポを参考にしました。Clavaro はクレーン操作とボールプール構築を交互に扱い、キャッチ結果、ボール構成、レリック発動で得点を決めます。"
           ],
           en: [
-            "Clavaro turns the tension of a claw machine into a roguelike build loop. Each grab remains uncertain, but scoring, ball-pool editing, shop choices, and relic effects convert those results into new strategic decisions.",
-            "The design is clearly influenced by Balatro: simple rules, strong feedback, numerical growth, and chained effects create a satisfying rhythm. Instead of copying the card format directly, Clavaro uses grabbing and ball-pool construction to make luck and player choice both matter to the outcome."
+            "The project references Balatro's short round structure, numerical growth, and chained feedback. Clavaro changes the interaction layer to claw control and ball-pool construction, so the result comes from grab performance, ball composition, and relic triggers."
           ]
         }
       },
@@ -532,7 +529,7 @@ window.PORTFOLIO_PROJECTS = [
           {
             src: "assets/projects/clavaro/clavaro-mascot.webp",
             alt: "Clavaro mascot",
-            caption: { zh: "吉祥物：强化街机抓取主题的视觉识别", ja: "マスコット", en: "Mascot supporting the arcade-claw identity" }
+            caption: { zh: "吉祥物：补充街机抓取主题的视觉识别", ja: "マスコット", en: "Mascot supporting the arcade-claw identity" }
           }
         ]
       },
@@ -545,16 +542,16 @@ window.PORTFOLIO_PROJECTS = [
         },
         body: {
           zh: [
-            "Clavaro 的球不是单纯美术素材，而是构筑系统的基本单位。基础分球、倍率球、一次性效果球、风险球和特殊触发球共同决定一局中每次抓取的价值。",
-            "我没有把全部球和道具都堆在页面里，而是选取能代表系统方向的样本展示：分数、倍率、风险、奖励、干扰和主题化物件。这样既能展示素材规模，也能保持作品集页面干净。"
+            "Clavaro 的球体按功能进入构筑系统。基础分球、倍率球、一次性效果球、风险球和特殊触发球分别影响抓取收益、结算顺序和后续构筑选择。",
+            "页面展示的是经过筛选的代表性球体与遗物，覆盖分数、倍率、风险、奖励、干扰和主题化物件等类型，用于说明球池构筑的功能范围和视觉分类。"
           ],
           ja: [
-            "Clavaro のボールは単なる素材ではなく、構築システムの基本単位です。",
-            "全素材を並べるのではなく、得点、倍率、リスク、報酬、妨害を表す代表的なサンプルだけを選んでいます。"
+            "Clavaro のボールは、機能ごとに構築システムへ入ります。基礎点ボール、倍率ボール、一回限りの効果ボール、リスクボール、特殊発動ボールが、キャッチ報酬、精算順、後続の構築選択に影響します。",
+            "ページでは、得点、倍率、リスク、報酬、妨害、テーマ性を示す代表的なボールとレリックを掲載し、ボールプール構築の機能範囲と視覚分類を説明しています。"
           ],
           en: [
-            "The balls in Clavaro are not just visual assets; they are the basic units of the build system. Base-score balls, multipliers, one-shot effects, risk balls, and special triggers shape the value of each grab.",
-            "Instead of dumping every item into the page, this portfolio shows a curated sample that communicates score, multiplier, risk, reward, disruption, and theme while keeping the layout clean."
+            "Clavaro's balls enter the build system by function. Base-score balls, multipliers, one-shot effects, risk balls, and special triggers affect grab value, scoring order, and later build choices.",
+            "The page shows selected balls and relics that cover score, multiplier, risk, reward, disruption, and theme. This explains the functional range and visual categories of the ball-pool system."
           ]
         }
       },
@@ -565,17 +562,17 @@ window.PORTFOLIO_PROJECTS = [
           {
             src: "assets/projects/clavaro/clavaro-balls-sheet.webp",
             alt: "Clavaro selected balls",
-            caption: { zh: "精选球体：展示球池构筑的基本单位", ja: "代表的なボール素材", en: "Selected balls as the base units of the pool" }
+            caption: { zh: "精选球体：球池构筑的主要功能类型", ja: "ボールプール構築の主要機能タイプ", en: "Selected balls covering the main pool functions" }
           },
           {
             src: "assets/projects/clavaro/clavaro-relics-sheet.webp",
             alt: "Clavaro selected relics",
-            caption: { zh: "精选遗物：展示触发链和长期成长方向", ja: "代表的なレリック素材", en: "Selected relics showing trigger chains and long-term growth" }
+            caption: { zh: "精选遗物：展示触发链和长期成长方向", ja: "発動連鎖と長期成長を示すレリック", en: "Selected relics for trigger chains and long-term growth" }
           },
           {
             src: "assets/projects/clavaro/clavaro-item-preview-a.webp",
             alt: "Clavaro item tooltip",
-            caption: { zh: "道具提示：只展示代表性 UI，不铺满所有条目", ja: "アイテム説明 UI", en: "Representative item tooltip UI" }
+            caption: { zh: "道具提示：代表性条目和说明 UI", ja: "アイテム説明 UI", en: "Representative item tooltip UI" }
           }
         ]
       }
