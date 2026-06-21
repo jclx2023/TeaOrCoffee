@@ -53,6 +53,24 @@ window.PORTFOLIO_PROJECTS = [
         }
       },
       {
+        type: "text",
+        title: { zh: "设计意图", ja: "設計意図", en: "Design Intent" },
+        body: {
+          zh: [
+            "Deep 以深海探索为核心，把未知生态、遗迹文明和环境危险组织成一个逐层展开的世界。玩家随着下潜深度增加，遇到新的生物、资源、区域和威胁，并在探索过程中慢慢理解这片海域的规则。",
+            "相比直接讲述环保主题，这个企划更希望通过冒险体验让玩家产生兴趣。深海的美丽、压迫感和脆弱性会通过生物设计、区域推进和资源系统呈现，让环境议题自然融入游玩过程。"
+          ],
+          ja: [
+            "Deep は、深海探索を軸に、未知の生態、遺跡文明、環境の危険を段階的に見せていく企画です。プレイヤーは深く潜るほど、新しい生物、資源、エリア、脅威に出会い、探索を通して海域のルールを理解していきます。",
+            "環境保護のテーマを直接説明するのではなく、冒険の体験として興味を持たせることを意識しました。深海の美しさ、圧迫感、脆さを、生物設計、エリア進行、資源システムの中に自然に組み込むことを目指しています。"
+          ],
+          en: [
+            "Deep is built around deep-sea exploration, using unknown ecology, ruined civilization, and environmental danger to create a world that opens up layer by layer. As players dive deeper, they encounter new creatures, resources, areas, and threats while gradually learning the rules of the ocean.",
+            "Rather than explaining environmental protection directly, the concept uses adventure to build curiosity. The beauty, pressure, and fragility of the deep sea are meant to emerge through creature design, area progression, and resource systems."
+          ]
+        }
+      },
+      {
         type: "gallery",
         title: { zh: "现有概念图", ja: "既存コンセプト画像", en: "Existing Concept Images" },
         images: [
@@ -129,6 +147,24 @@ window.PORTFOLIO_PROJECTS = [
           en: [
             "ChineseLesson turns Chinese vocabulary practice into a multiplayer game loop. Players move through the main menu, lobby, room-ready state, classroom gameplay, answer input, and card usage while the session stays synchronized online.",
             "The project breaks learning into playable touchpoints: question display, input, feedback, time pressure, player state, item cards, and room synchronization. Its focus is a complete playable flow rather than an isolated quiz screen."
+          ]
+        }
+      },
+      {
+        type: "text",
+        title: { zh: "设计意图", ja: "設計意図", en: "Design Intent" },
+        body: {
+          zh: [
+            "ChineseLesson 把词汇练习设计成适合多人联机和直播观看的派对答题游戏。它不把学习内容当作静态题库，而是通过课堂场景、限时回答、玩家状态和道具干扰，让语言知识变成一连串可互动、可出错、也容易制造气氛的游戏行为。",
+            "项目灵感来自直播中常见的轻松失误：答错简单词汇、想不起汉字、在基础问题上犹豫。这类瞬间既有娱乐性，也反映了现代人对手写和传统语言知识的疏离。因此游戏希望让玩家在竞争和笑声中自然复习词汇与汉字。"
+          ],
+          ja: [
+            "ChineseLesson は、語彙練習をオンライン対戦や配信に向いたパーティークイズとして設計した作品です。学習内容を静的な問題集として扱うのではなく、教室の場面、制限時間、プレイヤー状態、アイテムカードを通して、言語知識をインタラクティブな行動に変換しています。",
+            "着想は、配信者が簡単な単語や漢字、基礎問題で迷う場面から得ました。そうした小さな失敗は見ている側にも伝わりやすく、場を盛り上げます。同時に、スマートフォンや変換機能に慣れた現代人が、手書きや語彙への意識から離れていることも感じました。ゲームの中で笑いながら語彙や漢字を復習できる形を目指しています。"
+          ],
+          en: [
+            "ChineseLesson turns vocabulary practice into a party quiz game designed for online multiplayer and livestream viewing. Instead of presenting learning as a static question bank, it uses a classroom setting, timed answers, player states, and item-card interference to make language knowledge interactive, error-prone, and entertaining.",
+            "The idea came from small, funny mistakes often seen in streams: forgetting a simple word, failing to write a character, or hesitating on a basic question. Those moments are easy for viewers to understand and react to, while also reflecting how modern input tools distance people from handwriting and traditional language knowledge. The game aims to let players review vocabulary and characters through competition and laughter."
           ]
         }
       },
@@ -281,6 +317,24 @@ window.PORTFOLIO_PROJECTS = [
         }
       },
       {
+        type: "text",
+        title: { zh: "设计意图", ja: "設計意図", en: "Design Intent" },
+        body: {
+          zh: [
+            "WindowsMurder 的核心是把玩家熟悉的桌面操作变成推理解谜的一部分。打开文件夹、查看弹窗、阅读错误提示、和程序角色对话，这些日常电脑行为在游戏中被重新组织成调查动作，让玩家几乎不需要额外学习就能进入案件。",
+            "LLM 对话被放在这个系统里，是因为程序 NPC 本身就很适合“可交流的软件”这一设定。玩家可以用自己的语言追问线索，而游戏仍通过角色身份、信息范围和剧情条件控制体验节奏。这让作品不仅是桌面风格的侦探游戏，也带有对 AI 与软件人格化的思考。"
+          ],
+          ja: [
+            "WindowsMurder の中心は、プレイヤーが慣れているデスクトップ操作を推理行動に変えることです。フォルダを開く、ポップアップを見る、エラー表示を読む、プログラムキャラクターと会話する、といった日常的な操作を調査の流れとして再構成しています。",
+            "LLM 会話は、プログラム NPC を「話せるソフトウェア」として扱うための仕組みです。プレイヤーは自分の言葉で手がかりを聞くことができますが、キャラクターの役割、情報範囲、進行条件によってゲームとしてのテンポも保つように設計しました。デスクトップ推理ゲームであると同時に、AI とソフトウェアの人格化について考える作品でもあります。"
+          ],
+          en: [
+            "WindowsMurder turns familiar desktop actions into part of the detective process. Opening folders, checking pop-ups, reading error messages, and talking to program characters are everyday computer behaviors, but here they become investigation tools that let players enter the case with very little extra explanation.",
+            "LLM dialogue fits the setting because program NPCs already suggest the idea of software that can speak back. Players can ask questions in their own words, while character roles, information boundaries, and story conditions keep the experience paced like a game. The result is a desktop detective game that also reflects on AI and the personification of software."
+          ]
+        }
+      },
+      {
         type: "gallery",
         title: { zh: "视觉参考与风格建立", ja: "ビジュアル参考", en: "Visual Reference and Style" },
         images: [
@@ -415,6 +469,24 @@ window.PORTFOLIO_PROJECTS = [
           en: [
             "Clavaro combines claw-machine control with roguelike construction. Instead of directly playing cards, the player controls a claw, grabs balls with different scoring functions, and develops a build through settlement, shops, relics, and ball-pool editing.",
             "The main design problem is balancing physical uncertainty with strategic control. Too much randomness removes planning; too much control removes the tension of a claw machine. The loop is built around grabs, target score, base balls, multipliers, special balls, shop rerolls, and relic triggers."
+          ]
+        }
+      },
+      {
+        type: "text",
+        title: { zh: "设计意图", ja: "設計意図", en: "Design Intent" },
+        body: {
+          zh: [
+            "Clavaro 试图把抓娃娃机的紧张感变成可构筑的 Roguelike 循环。玩家每次抓取都带有不确定性，但分数结算、球池调整、商店选择和遗物效果会把这些结果继续转化为下一轮策略。",
+            "项目明显受到 Balatro 的影响：简单规则、强反馈、数值增长和连锁效果共同制造爽感。Clavaro 没有直接沿用卡牌形式，而是用抓取动作和球池构筑来承载类似的节奏，让“运气”和“我做出的选择”同时影响结果。"
+          ],
+          ja: [
+            "Clavaro は、クレーンゲームの緊張感を Roguelike 的な構築ループに変換することを目指した作品です。毎回のキャッチには不確定性がありますが、得点計算、ボールプール調整、ショップ選択、レリック効果によって、その結果が次の戦略につながります。",
+            "設計には Balatro からの影響があります。シンプルなルール、強いフィードバック、数値の伸び、効果の連鎖が爽快感を作る点に強く惹かれました。Clavaro ではカード形式をそのまま使うのではなく、掴む行為とボールプール構築によって、運と選択が同時に結果へ影響するリズムを作ろうとしています。"
+          ],
+          en: [
+            "Clavaro turns the tension of a claw machine into a roguelike build loop. Each grab remains uncertain, but scoring, ball-pool editing, shop choices, and relic effects convert those results into new strategic decisions.",
+            "The design is clearly influenced by Balatro: simple rules, strong feedback, numerical growth, and chained effects create a satisfying rhythm. Instead of copying the card format directly, Clavaro uses grabbing and ball-pool construction to make luck and player choice both matter to the outcome."
           ]
         }
       },
