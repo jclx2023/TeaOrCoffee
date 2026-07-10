@@ -9,17 +9,18 @@
   --paper: #f8f8f0;
   --panel: #ffffff;
   --panel-soft: #fff7d8;
-  --cyan: #25d6d1;
-  --lime: #baff29;
-  --red: #ff4f38;
-  --yellow: #ffd84d;
+  --cyan: #2bc9c5;
+  --lime: #b5ef32;
+  --red: #ed4935;
+  --yellow: #f8d04b;
   --blue: #2b6cff;
   --line: #111111;
   --muted: #5b5b54;
-  --shadow: 8px 8px 0 var(--ink);
-  --shadow-tight: 5px 5px 0 var(--ink);
+  --shadow: 6px 6px 0 var(--ink);
+  --shadow-tight: 4px 4px 0 var(--ink);
   --pixel-font: "Silver Pixel", "Courier New", ui-monospace, Menlo, Consolas, monospace;
-  --text-font: "Courier New", ui-monospace, Menlo, Consolas, monospace;
+  --mono-font: "Courier New", ui-monospace, Menlo, Consolas, monospace;
+  --text-font: "Noto Sans SC", "Noto Sans JP", "Microsoft YaHei UI", "Yu Gothic UI", "PingFang SC", Arial, sans-serif;
 }
 
 html:lang(ja),
@@ -184,12 +185,12 @@ a.button {
 .hero {
   position: relative;
   display: grid;
-  min-height: calc(100vh - 92px);
+  min-height: calc(100svh - 110px);
   grid-template-columns: repeat(12, minmax(0, 1fr));
   align-items: center;
   column-gap: clamp(24px, 3.8vw, 96px);
   row-gap: clamp(18px, 2.2vw, 34px);
-  padding: clamp(34px, 3.6vw, 64px) clamp(18px, 3.8vw, 86px) 36px;
+  padding: clamp(26px, 3vw, 48px) clamp(18px, 3.8vw, 86px) 30px;
 }
 
 .hero::before {
@@ -217,6 +218,7 @@ a.button {
   color: var(--muted);
   font-size: 1rem;
   font-weight: 900;
+  font-family: var(--mono-font);
   text-transform: uppercase;
 }
 
@@ -271,7 +273,7 @@ h3,
 .profile-main p {
   max-width: 720px;
   font-size: clamp(1.1rem, 2.2vw, 1.45rem);
-  font-weight: 700;
+  font-weight: 600;
   color: #24241f;
 }
 
@@ -313,7 +315,7 @@ h3,
 
 .button.primary {
   background: var(--red);
-  color: #ffffff;
+  color: var(--ink);
 }
 
 .button.ghost {
@@ -349,7 +351,7 @@ h3,
 }
 
 .meta-pill {
-  font-family: var(--text-font);
+  font-family: var(--mono-font);
 }
 
 .project-status-link {
@@ -379,13 +381,13 @@ h3,
   align-self: stretch;
   display: grid;
   place-items: center;
-  min-height: min(94vh, 980px);
+  min-height: min(76vh, 760px);
   z-index: 1;
 }
 
 .model-stage {
-  width: min(60vw, 1320px);
-  height: min(96vh, 1180px);
+  width: min(56vw, 1080px);
+  height: min(82vh, 900px);
   display: grid;
   place-items: center;
   perspective: 900px;
@@ -660,7 +662,7 @@ h3,
   display: grid;
   grid-template-rows: auto 1fr;
   min-height: 100%;
-  border: 4px solid var(--line);
+  border: 3px solid var(--line);
   background: var(--panel);
   box-shadow: var(--shadow);
   position: relative;
@@ -688,7 +690,7 @@ h3,
 .work-card:hover,
 .work-card:focus-within {
   transform: translate(-4px, -4px) rotate(0.7deg);
-  box-shadow: 12px 12px 0 var(--ink);
+  box-shadow: 9px 9px 0 var(--ink);
   filter: saturate(1.12) contrast(1.04);
   animation: cardJitter 240ms steps(2, end) 1;
 }
@@ -697,7 +699,7 @@ h3,
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  border-bottom: 4px solid var(--line);
+  border-bottom: 3px solid var(--line);
   image-rendering: auto;
   transition: transform 220ms steps(4, end), filter 220ms steps(4, end);
 }
@@ -779,7 +781,10 @@ h3,
 }
 
 .contact-section {
-  min-height: 42vh;
+  display: grid;
+  min-height: clamp(260px, 30vh, 340px);
+  align-content: center;
+  padding-block: clamp(42px, 4vw, 56px);
   border-top: 4px solid var(--line);
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.45) 0 2px, transparent 2px 16px),
@@ -813,9 +818,14 @@ h3,
 
 .project-hero-copy,
 .project-visual,
-.article-block,
 .gallery img {
   border: 4px solid var(--line);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.article-block {
+  border: 3px solid var(--line);
   background: var(--panel);
   box-shadow: var(--shadow);
 }
@@ -905,6 +915,25 @@ h3,
   font-size: 0.96rem;
   font-weight: 900;
   line-height: 1.25;
+}
+
+.image-source {
+  margin: -2px 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.image-source a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.image-source a:hover {
+  color: var(--blue);
 }
 
 .missing {
@@ -1039,6 +1068,15 @@ body.image-zoom-open {
 
 .project-modal-panel .article-block {
   margin: 0 clamp(18px, 3vw, 30px) clamp(18px, 3vw, 30px);
+  border-width: 2px;
+  box-shadow: 3px 3px 0 var(--ink);
+}
+
+.project-modal-panel .project-block-gallery,
+.project-modal-panel .project-block-facts,
+.project-modal-panel .project-block-image-text {
+  border-width: 3px;
+  box-shadow: var(--shadow);
 }
 
 .modal-close {
@@ -1203,6 +1241,19 @@ body.image-zoom-open {
     grid-column: 1 / -1;
   }
 
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-model {
+    min-height: clamp(500px, 68vw, 620px);
+  }
+
+  .model-stage {
+    width: min(78vw, 620px);
+    height: clamp(520px, 72vw, 660px);
+  }
+
   .works-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1212,24 +1263,26 @@ body.image-zoom-open {
   .site-header {
     align-items: flex-start;
     flex-wrap: wrap;
-    top: 8px;
+    top: 6px;
     width: calc(100% - 16px);
-    margin-top: 8px;
-    gap: 12px;
+    margin-top: 6px;
+    gap: 8px;
+    padding: 10px 12px;
   }
 
   .nav-links {
     order: 3;
     width: 100%;
     justify-content: stretch;
-    gap: 8px;
+    gap: 6px;
   }
 
   .nav-links a {
     flex: 1;
     border: 2px solid var(--line);
     background: var(--panel);
-    padding: 5px 8px 4px;
+    min-height: 30px;
+    padding: 3px 6px 2px;
     text-align: center;
     box-shadow: 3px 3px 0 var(--ink);
   }
@@ -1240,7 +1293,7 @@ body.image-zoom-open {
 
   .hero {
     min-height: auto;
-    padding-top: 30px;
+    padding-top: 24px;
   }
 
   .hero::before {
@@ -1260,8 +1313,8 @@ body.image-zoom-open {
   }
 
   .model-stage {
-    width: min(96vw, 480px);
-    height: min(96vw, 480px);
+    width: min(100%, 480px);
+    height: min(90vw, 480px);
   }
 
   .handheld-3d {
@@ -1300,9 +1353,16 @@ body.image-zoom-open {
   }
 
   .brand-mark {
-    width: 42px;
-    height: 42px;
+    width: 38px;
+    height: 38px;
     font-size: 1.15rem;
+  }
+
+  .language-switch button {
+    min-width: 34px;
+    min-height: 32px;
+    border-width: 2px;
+    box-shadow: 2px 2px 0 var(--ink);
   }
 
   .project-modal-panel .project-hero h1 {

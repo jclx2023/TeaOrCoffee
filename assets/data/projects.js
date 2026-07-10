@@ -243,11 +243,33 @@ window.PORTFOLIO_PROJECTS = [
           {
             src: "assets/projects/chinese/chinese-reference-teacher.webp",
             alt: "ChineseLesson teacher reference",
+            source: {
+              site: { zh: "包图网", ja: "包图网（ibaotu.com）", en: "BaoTuWang (ibaotu.com)" },
+              title: {
+                zh: "中国男教师高清摄影图",
+                ja: "中国男教师高清摄影图",
+                en: "中国男教师高清摄影图"
+              },
+              author: { zh: "包图网", ja: "包图网", en: "BaoTuWang" },
+              accessed: { zh: "2026-07-03", ja: "2026年7月3日", en: "July 3, 2026" },
+              url: "https://ibaotu.com/sucai/19726426.html?kwd=%E9%AB%98%E4%B8%AD%E7%94%9F"
+            },
             caption: { zh: "教师角色参考图", ja: "教師キャラクター参考", en: "Teacher character reference" }
           },
           {
             src: "assets/projects/chinese/chinese-reference-student.webp",
             alt: "ChineseLesson student reference",
+            source: {
+              site: { zh: "千图网", ja: "千图网（58pic.com）", en: "58pic" },
+              title: {
+                zh: "校园生活帅气高中生大学生正面微笑照",
+                ja: "校园生活帅气高中生大学生正面微笑照",
+                en: "校园生活帅气高中生大学生正面微笑照"
+              },
+              author: { zh: "千图网", ja: "千图网", en: "58pic" },
+              accessed: { zh: "2026-07-03", ja: "2026年7月3日", en: "July 3, 2026" },
+              url: "https://www.58pic.com/newpic/54411530.html"
+            },
             caption: { zh: "学生角色参考图", ja: "学生キャラクター参考", en: "Student character reference" }
           },
           {

@@ -219,6 +219,31 @@ function renderMetaRow(meta, lang, project) {
     .join("");
 }
 
+function renderImageSource(source, lang) {
+  if (!source) return "";
+
+  const site = textFor(source.site, lang);
+  const title = textFor(source.title, lang);
+  const author = textFor(source.author, lang, site);
+  const accessed = textFor(source.accessed, lang);
+  let citation = "";
+
+  if (lang === "ja") {
+    citation = `画像出典：${site}「${title}」（作者：${author}${accessed ? `、閲覧日：${accessed}` : ""}）`;
+  } else if (lang === "en") {
+    citation = `Image source: ${site}, "${title}" (author: ${author}${accessed ? `, accessed ${accessed}` : ""})`;
+  } else {
+    citation = `图片来源：${site}《${title}》（作者：${author}${accessed ? `，访问日期：${accessed}` : ""}）`;
+  }
+
+  const url = source.url ? escapeHtml(source.url) : "";
+  const citationHtml = escapeHtml(citation);
+
+  return url
+    ? `<p class="image-source"><a href="${url}" target="_blank" rel="noopener noreferrer">${citationHtml}</a></p>`
+    : `<p class="image-source">${citationHtml}</p>`;
+}
+
 function renderBlock(block, lang) {
   const title = textFor(block.title, lang);
   const titleHtml = title ? `<p class="eyebrow">${escapeHtml(title)}</p>` : "";
@@ -250,10 +275,12 @@ function renderBlock(block, lang) {
         <div class="gallery">
           ${(block.images || []).map((image) => {
             const caption = textFor(image.caption, lang);
+            const source = renderImageSource(image.source, lang);
             return `
               <figure class="gallery-item">
                 <img src="${escapeHtml(image.src)}" alt="${escapeHtml(textFor(image.alt, lang, image.alt || ""))}" loading="lazy">
                 ${caption ? `<figcaption>${escapeHtml(caption)}</figcaption>` : ""}
+                ${source}
               </figure>
             `;
           }).join("")}
