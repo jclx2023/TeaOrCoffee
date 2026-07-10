@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <base href="../../" />
+    <meta name="description" content="ChineseLesson - Xu Bang game design portfolio" />
+    <title>ChineseLesson | Xu Bang Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23b5ef32'/%3E%3Cpath d='M8 8h48v48H8z' fill='none' stroke='%23111111' stroke-width='6'/%3E%3Ctext x='32' y='40' font-size='20' font-family='monospace' font-weight='900' text-anchor='middle' fill='%23111111'%3EXB%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="project-page">
+    <header class="site-header compact project-page-header">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark">XB</span>
+        <span>TeaOrCoffee</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#works" data-i18n="navWorks">作品</a>
+        <a href="index.html#profile" data-i18n="navProfile">关于</a>
+        <a href="index.html#contact" data-i18n="navContact">联系</a>
+      </nav>
+      <div class="language-switch" aria-label="Language">
+        <button type="button" data-lang="zh" aria-pressed="true">中</button>
+        <button type="button" data-lang="ja" aria-pressed="false">日</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </header>
+
+    <main class="project-shell" id="top">
+      <div class="project-page-toolbar">
+        <a class="button ghost project-back" href="index.html#works" data-project-back>← 返回作品</a>
+        <span class="project-position" id="projectPosition"></span>
+      </div>
+      <div class="project-page-content" id="projectPageContent"></div>
+      <nav class="project-pagination" id="projectPagination" aria-label="Project navigation"></nav>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Xu Bang</span>
+      <span data-i18n="footerText">Static portfolio for GitHub Pages</span>
+    </footer>
+
+    <script src="assets/data/site.js"></script>
+    <script src="language.js"></script>
+    <script src="assets/data/project-index.js"></script>
+    <script src="assets/data/projects/chinese.js"></script>
+    <script src="project-page.js"></script>
+  </body>
+</html>
