@@ -12,6 +12,7 @@ const projectUi = {
     previous: "\u2190 \u4e0a\u4e00\u4e2a\u9879\u76ee",
     next: "\u4e0b\u4e00\u4e2a\u9879\u76ee \u2192",
     openPdf: "\u6253\u5f00 PDF",
+    openVideo: "\u5728 YouTube \u4e2d\u6253\u5f00",
     downloadDocx: "\u4e0b\u8f7d DOCX \u6e90\u6587\u4ef6",
     videoUnsupported: "\u6d4f\u89c8\u5668\u4e0d\u652f\u6301\u89c6\u9891\u64ad\u653e\u3002",
     pdfTitle: "PDF \u6587\u6863\u9884\u89c8"
@@ -22,6 +23,7 @@ const projectUi = {
     previous: "\u2190 \u524d\u306e\u4f5c\u54c1",
     next: "\u6b21\u306e\u4f5c\u54c1 \u2192",
     openPdf: "PDF \u3092\u958b\u304f",
+    openVideo: "YouTube \u3067\u958b\u304f",
     downloadDocx: "DOCX \u539f\u7a3f\u3092\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9",
     videoUnsupported: "\u3053\u306e\u30d6\u30e9\u30a6\u30b6\u306f\u52d5\u753b\u518d\u751f\u306b\u5bfe\u5fdc\u3057\u3066\u3044\u307e\u305b\u3093\u3002",
     pdfTitle: "PDF \u30d7\u30ec\u30d3\u30e5\u30fc"
@@ -32,6 +34,7 @@ const projectUi = {
     previous: "\u2190 Previous project",
     next: "Next project \u2192",
     openPdf: "Open PDF",
+    openVideo: "Open on YouTube",
     downloadDocx: "Download DOCX source",
     videoUnsupported: "Your browser does not support video playback.",
     pdfTitle: "PDF document preview"
@@ -169,8 +172,10 @@ function renderVideoBlock(block, lang, titleHtml) {
 }
 
 function renderEmbedVideoBlock(block, lang, titleHtml) {
+  const labels = getLabels(lang);
   const title = textFor(block.title, lang, "Embedded video");
   const url = textFor(block.url || block.src, lang);
+  const externalUrl = textFor(block.externalUrl || block.watchUrl, lang);
   const caption = textFor(block.caption, lang);
 
   return `
@@ -180,6 +185,11 @@ function renderEmbedVideoBlock(block, lang, titleHtml) {
         <iframe src="${escapeHtml(url)}" title="${escapeHtml(title)}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       ${caption ? `<p class="media-caption">${escapeHtml(caption)}</p>` : ""}
+      ${externalUrl ? `
+        <div class="media-actions">
+          <a class="button ghost" href="${escapeHtml(externalUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(labels.openVideo)}</a>
+        </div>
+      ` : ""}
     </section>
   `;
 }
@@ -203,6 +213,35 @@ function renderDocumentBlock(block, lang, titleHtml) {
       <div class="document-actions">
         ${pdf ? `<a class="button ghost" href="${escapeHtml(pdf)}" target="_blank" rel="noopener noreferrer">${escapeHtml(labels.openPdf)}</a>` : ""}
         ${docx ? `<a class="button primary" href="${escapeHtml(docx)}" download>${escapeHtml(labels.downloadDocx)}</a>` : ""}
+      </div>
+    </section>
+  `;
+}
+
+function renderDocumentsBlock(block, lang, titleHtml) {
+  const labels = getLabels(lang);
+  const description = listFor(block.body || block.description, lang);
+
+  return `
+    <section class="article-block project-block project-block-documents">
+      ${titleHtml}
+      ${description.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}
+      <div class="document-grid">
+        ${(block.documents || []).map((document) => {
+          const pdf = textFor(document.pdf || document.pdfSrc, lang);
+          const title = textFor(document.title, lang, labels.pdfTitle);
+          const meta = textFor(document.meta, lang);
+          const summary = textFor(document.description || document.body, lang);
+
+          return `
+            <article class="document-card">
+              ${meta ? `<p class="document-card-meta">${escapeHtml(meta)}</p>` : ""}
+              <h3>${escapeHtml(title)}</h3>
+              ${summary ? `<p>${escapeHtml(summary)}</p>` : ""}
+              ${pdf ? `<a class="button ghost" href="${escapeHtml(pdf)}" target="_blank" rel="noopener noreferrer">${escapeHtml(labels.openPdf)}</a>` : ""}
+            </article>
+          `;
+        }).join("")}
       </div>
     </section>
   `;
@@ -233,16 +272,23 @@ function renderBlock(block, lang) {
   }
 
   if (block.type === "gallery") {
+    const galleryClass = block.layout === "full" ? "gallery gallery-full" : "gallery";
     return `
       <section class="article-block project-block project-block-gallery">
         ${titleHtml}
-        <div class="gallery">
+        <div class="${galleryClass}">
           ${(block.images || []).map((image) => {
             const caption = textFor(image.caption, lang);
             const source = renderImageSource(image.source, lang);
+            const alt = textFor(image.alt, lang, image.alt || "");
+            const imageClasses = [
+              "gallery-image",
+              image.fit === "contain" ? "gallery-image-contain" : "",
+              image.ratio === "wide" ? "gallery-image-wide" : ""
+            ].filter(Boolean).join(" ");
             return `
               <figure class="gallery-item">
-                <img src="${escapeHtml(image.src)}" alt="${escapeHtml(textFor(image.alt, lang, image.alt || ""))}" loading="lazy">
+                <img class="${imageClasses}" src="${escapeHtml(image.src)}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async" tabindex="0" role="button" aria-label="${escapeHtml(caption || alt)}">
                 ${caption ? `<figcaption>${escapeHtml(caption)}</figcaption>` : ""}
                 ${source}
               </figure>
@@ -278,11 +324,13 @@ function renderBlock(block, lang) {
   }
 
   if (block.type === "imageText") {
+    const imageAlt = textFor(block.image?.alt, lang);
+    const imageClass = block.image?.fit === "contain" ? "image-text-visual image-text-visual-contain" : "image-text-visual";
     return `
       <article class="article-block project-block project-block-image-text">
         ${titleHtml}
         <div class="image-text">
-          <img src="${escapeHtml(block.image?.src || "")}" alt="${escapeHtml(textFor(block.image?.alt, lang))}" loading="lazy">
+          <img class="${imageClass}" src="${escapeHtml(block.image?.src || "")}" alt="${escapeHtml(imageAlt)}" loading="lazy" decoding="async" tabindex="0" role="button" aria-label="${escapeHtml(imageAlt)}">
           <div>
             ${listFor(block.body, lang).map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}
           </div>
@@ -294,6 +342,7 @@ function renderBlock(block, lang) {
   if (block.type === "video") return renderVideoBlock(block, lang, titleHtml);
   if (block.type === "embedVideo") return renderEmbedVideoBlock(block, lang, titleHtml);
   if (block.type === "document") return renderDocumentBlock(block, lang, titleHtml);
+  if (block.type === "documents") return renderDocumentsBlock(block, lang, titleHtml);
 
   return "";
 }
@@ -443,6 +492,14 @@ function setupLanguageSwitch() {
 function setupImageZoom() {
   document.getElementById("projectPageContent")?.addEventListener("click", (event) => {
     const image = event.target.closest("img");
+    if (!image) return;
+    event.preventDefault();
+    openImageZoom(image);
+  });
+
+  document.getElementById("projectPageContent")?.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter" && event.key !== " ") return;
+    const image = event.target.closest('img[role="button"]');
     if (!image) return;
     event.preventDefault();
     openImageZoom(image);

@@ -88,6 +88,21 @@ window.PORTFOLIO_PROJECT = {
       }
     },
     {
+      "type": "embedVideo",
+      "title": {
+        "zh": "演示视频",
+        "ja": "プレイデモ",
+        "en": "Gameplay Demo"
+      },
+      "url": "https://www.youtube-nocookie.com/embed/6QLc99IqVoY",
+      "externalUrl": "https://youtu.be/6QLc99IqVoY",
+      "caption": {
+        "zh": "展示抓取、结算、商店和构筑循环；如果嵌入播放器暂时无法播放，可通过下方链接在 YouTube 中打开。",
+        "ja": "キャッチ、精算、ショップ、構築ループのデモです。埋め込み再生できない場合は、下のリンクから YouTube で開けます。",
+        "en": "A demonstration of grabbing, scoring, shopping, and build progression. If embedded playback is unavailable, open it on YouTube below."
+      }
+    },
+    {
       "type": "facts",
       "title": {
         "zh": "系统循环",
@@ -141,6 +156,43 @@ window.PORTFOLIO_PROJECT = {
             "zh": "球池和遗物组合改变抓取价值",
             "ja": "ボールプールとレリックが価値を変える",
             "en": "Ball pool and relics change each grab's value"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": {
+        "zh": "UI 概念探索",
+        "ja": "UI コンセプトの検討",
+        "en": "UI Concept Exploration"
+      },
+      "images": [
+        {
+          "src": "assets/projects/clavaro/clavaro-ui-concept-01.webp",
+          "alt": "Clavaro early claw machine UI concept",
+          "caption": {
+            "zh": "方向 1：抓娃娃机本体、目标分与球池信息集中呈现",
+            "ja": "案 1：クレーン筐体、目標点、ボールプール情報を一画面に集約",
+            "en": "Direction 1: claw cabinet, target score, and pool information in one screen"
+          }
+        },
+        {
+          "src": "assets/projects/clavaro/clavaro-ui-concept-02.webp",
+          "alt": "Clavaro monster development UI concept",
+          "caption": {
+            "zh": "方向 2：尝试以怪物成长和孵化作为长期反馈主题",
+            "ja": "案 2：モンスター育成と孵化を長期フィードバックとして検討",
+            "en": "Direction 2: monster growth and hatching as long-term feedback"
+          }
+        },
+        {
+          "src": "assets/projects/clavaro/clavaro-ui-concept-03.webp",
+          "alt": "Clavaro arcade cabinet UI concept",
+          "caption": {
+            "zh": "方向 3：街机框架、回合信息、倍率与已收集物的分区布局",
+            "ja": "案 3：筐体、ラウンド情報、倍率、取得物を分けたレイアウト",
+            "en": "Direction 3: arcade frame with separated round, multiplier, and collection areas"
           }
         }
       ]
@@ -272,6 +324,45 @@ window.PORTFOLIO_PROJECT = {
             "zh": "道具提示：代表性条目和说明 UI",
             "ja": "アイテム説明 UI",
             "en": "Representative item tooltip UI"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": {
+        "zh": "系统实现证据",
+        "ja": "システム実装",
+        "en": "System Implementation Evidence"
+      },
+      "images": [
+        {
+          "src": "assets/projects/clavaro/clavaro-unity-implementation.webp",
+          "alt": "Clavaro Unity scene hierarchy and project structure",
+          "caption": {
+            "zh": "Unity 场景、层级与脚本结构：商店、结算、遗物、教程等模块",
+            "ja": "Unity のシーン、階層、スクリプト構成：ショップ、精算、レリック、チュートリアル",
+            "en": "Unity scene, hierarchy, and scripts for shop, scoring, relics, and tutorial systems"
+          }
+        },
+        {
+          "src": "assets/projects/clavaro/clavaro-scoring-code.webp",
+          "fit": "contain",
+          "alt": "Clavaro score calculator code",
+          "caption": {
+            "zh": "计分逻辑：按基础分球、倍率球和特殊球分别累积结算上下文",
+            "ja": "スコア計算：基礎点、倍率、特殊ボールを分けて精算コンテキストへ集約",
+            "en": "Scoring logic separates base-score, multiplier, and special-ball settlement"
+          }
+        },
+        {
+          "src": "assets/projects/clavaro/clavaro-relic-trigger-code.webp",
+          "fit": "contain",
+          "alt": "Clavaro relic trigger processing code",
+          "caption": {
+            "zh": "遗物触发：根据球标签、回合和稀有度等条件处理连锁效果",
+            "ja": "レリック発動：ボールタグ、ラウンド、レア度などの条件で効果を処理",
+            "en": "Relic triggers evaluate ball tags, round state, rarity, and chained effects"
           }
         }
       ]

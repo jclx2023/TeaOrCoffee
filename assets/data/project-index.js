@@ -8,23 +8,23 @@ window.PORTFOLIO_PROJECT_INDEX = [
     "tags": [
       "Unity",
       "GDD",
-      "Pixel Art",
-      "Unfinished"
+      "Concept Art",
+      "Design Docs"
     ],
     "card": {
-      "zh": "深海探索题材的像素风动作冒险企划，内容包括世界观设定、区域推进、敌方生物与数值表设计。",
-      "ja": "深海探索を題材にしたピクセルアート系アクションアドベンチャー企画。世界観、エリア進行、敵生態、数値表を整理しています。",
-      "en": "A pixel-art action adventure concept for deep-sea exploration, with worldbuilding, area progression, enemy ecology, and balance tables."
+      "zh": "深海探索动作冒险企划，展示游戏循环、生物 AI、角色进化、敌方与 Boss 设计，并附三份日文企划书。",
+      "ja": "深海探索アクションアドベンチャー企画。ゲームループ、生物 AI、進化、敵・ボス設計と3冊の日本語企画書を掲載しています。",
+      "en": "A deep-sea action-adventure concept covering its game loop, creature AI, evolution, enemies, bosses, and three Japanese design documents."
     },
     "meta": {
       "zh": {
-        "subtitle": "未完成项目 / 企划案展示"
+        "subtitle": "深海动作冒险企划 / 日文企划书"
       },
       "ja": {
-        "subtitle": "未完成プロジェクト / 企画書資料"
+        "subtitle": "深海アクションアドベンチャー企画 / 日本語企画書"
       },
       "en": {
-        "subtitle": "Unfinished project / Design document"
+        "subtitle": "Deep-sea action-adventure concept / Japanese design documents"
       }
     }
   },

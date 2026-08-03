@@ -91,6 +91,21 @@ window.PORTFOLIO_PROJECT = {
       }
     },
     {
+      "type": "embedVideo",
+      "title": {
+        "zh": "演示视频",
+        "ja": "プレイデモ",
+        "en": "Gameplay Demo"
+      },
+      "url": "https://www.youtube-nocookie.com/embed/9RtpZhigL_Q",
+      "externalUrl": "https://youtu.be/9RtpZhigL_Q",
+      "caption": {
+        "zh": "展示桌面调查、程序角色和推理流程；如果嵌入播放器暂时无法播放，可通过下方链接在 YouTube 中打开。",
+        "ja": "デスクトップ調査、プログラムキャラクター、推理フローのデモです。埋め込み再生できない場合は、下のリンクから YouTube で開けます。",
+        "en": "A demonstration of desktop investigation, program characters, and deduction flow. If embedded playback is unavailable, open it on YouTube below."
+      }
+    },
+    {
       "type": "gallery",
       "title": {
         "zh": "视觉参考与风格建立",
