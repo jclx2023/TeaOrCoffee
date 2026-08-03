@@ -249,14 +249,66 @@ window.PORTFOLIO_PROJECT = {
             "ja": "設定画面",
             "en": "Settings for audio, language, and display"
           }
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": {
+        "zh": "角色品牌设计",
+        "ja": "キャラクターとブランド設計",
+        "en": "Character and Brand Design"
+      },
+      "body": {
+        "zh": [
+          "Clavaro 的 Mascot 是一只工程师螃蟹，同时担任电玩城和游戏内商店的老板。他的工装、护目镜、工具腰包和机械金币钳，把机械维修、抓取装置与商店经济集中到同一个角色上。",
+          "他喜欢金币，负责用夸张而友好的动作迎接玩家、介绍商店和强化购买欲望。这个鲜明角色为原本偏系统驱动的抓取与构筑玩法提供稳定的视觉锚点，也加强了项目的记忆点。"
+        ],
+        "ja": [
+          "Clavaro のマスコットはエンジニアのカニで、ゲームセンターとゲーム内ショップのオーナーも務めます。作業着、ゴーグル、工具袋、コインを持つ機械アームによって、機械整備、キャッチ装置、ショップ経済を一人のキャラクターにまとめています。",
+          "コインが大好きで、親しみやすく大きな身振りでプレイヤーを迎え、ショップや購入体験を案内します。システム中心のキャッチ＆構築ゲームに視覚的な軸を与え、作品の記憶性を高める役割です。"
+        ],
+        "en": [
+          "Clavaro's mascot is an engineer crab who also owns the arcade and runs the in-game shop. His workwear, goggles, tool belt, and coin-holding mechanical claw connect machine maintenance, the grabbing device, and the shop economy in one character.",
+          "He loves coins and welcomes players with broad, friendly gestures while introducing the shop and reinforcing the purchase loop. This distinctive character gives the system-driven grab-and-build design a consistent visual anchor and makes the project easier to remember."
+        ]
+      }
+    },
+    {
+      "type": "gallery",
+      "layout": "two",
+      "title": {
+        "zh": "工程师螃蟹 Mascot",
+        "ja": "エンジニア蟹マスコット",
+        "en": "Engineer Crab Mascot"
+      },
+      "images": [
+        {
+          "src": "assets/projects/clavaro/clavaro-mascot-shrug.webp",
+          "fit": "contain",
+          "alt": {
+            "zh": "摊开双钳迎接玩家的工程师螃蟹老板",
+            "ja": "両腕を広げてプレイヤーを迎えるエンジニア蟹の店主",
+            "en": "Engineer crab owner welcoming the player with open claws"
+          },
+          "caption": {
+            "zh": "迎客姿态：用于商店介绍、规则说明与轻松反馈",
+            "ja": "歓迎ポーズ：ショップ案内、ルール説明、軽いリアクションに使用",
+            "en": "Welcoming pose for shop introductions, explanations, and light reactions"
+          }
         },
         {
-          "src": "assets/projects/clavaro/clavaro-mascot.webp",
-          "alt": "Clavaro mascot",
+          "src": "assets/projects/clavaro/clavaro-mascot-coins.webp",
+          "fit": "contain",
+          "alt": {
+            "zh": "举起带金币机械钳的工程师螃蟹老板",
+            "ja": "コイン付きの機械アームを掲げるエンジニア蟹の店主",
+            "en": "Engineer crab owner raising his coin-holding mechanical claw"
+          },
           "caption": {
-            "zh": "吉祥物：补充街机抓取主题的视觉识别",
-            "ja": "マスコット",
-            "en": "Mascot supporting the arcade-claw identity"
+            "zh": "金币姿态：突出老板身份、机械主题和对金币的喜爱",
+            "ja": "コインポーズ：オーナー性、機械テーマ、コイン好きの性格を強調",
+            "en": "Coin pose emphasizing his owner role, mechanical theme, and love of coins"
           }
         }
       ]

@@ -2,7 +2,7 @@ window.PORTFOLIO_PROJECT = {
   "id": "deep",
   "displayTitle": "Deep",
   "year": "2024",
-  "cover": "assets/projects/deep/deep-ruins.webp",
+  "cover": "assets/projects/deep/deep-concept-scene-color.webp",
   "tags": [
     "Unity",
     "GDD",
@@ -115,6 +115,110 @@ window.PORTFOLIO_PROJECT = {
     },
     {
       "type": "gallery",
+      "title": {
+        "zh": "生物像素动画帧",
+        "ja": "生物ピクセルアニメーション",
+        "en": "Creature Pixel Animation"
+      },
+      "images": [
+        {
+          "src": "assets/projects/deep/deep-sprite-barracuda-move.png",
+          "fit": "contain",
+          "pixelated": true,
+          "alt": { "zh": "梭鱼基础游动动画帧", "ja": "カマスの通常移動フレーム", "en": "Barracuda basic movement frames" },
+          "caption": { "zh": "梭鱼：基础游动 · 5 帧", "ja": "カマス：通常移動・5フレーム", "en": "Barracuda: basic movement · 5 frames" }
+        },
+        {
+          "src": "assets/projects/deep/deep-sprite-blowfish-special.png",
+          "fit": "contain",
+          "pixelated": true,
+          "alt": { "zh": "河豚特殊攻击动画帧", "ja": "フグの特殊攻撃フレーム", "en": "Blowfish special attack frames" },
+          "caption": { "zh": "河豚：特殊攻击 · 5 帧", "ja": "フグ：特殊攻撃・5フレーム", "en": "Blowfish: special attack · 5 frames" }
+        },
+        {
+          "src": "assets/projects/deep/deep-sprite-crab-special.png",
+          "fit": "contain",
+          "pixelated": true,
+          "alt": { "zh": "螃蟹特殊动作动画帧", "ja": "カニの特殊行動フレーム", "en": "Crab special movement frames" },
+          "caption": { "zh": "螃蟹：特殊动作 · 4 帧", "ja": "カニ：特殊行動・4フレーム", "en": "Crab: special movement · 4 frames" }
+        },
+        {
+          "src": "assets/projects/deep/deep-sprite-electric-eel-move.png",
+          "fit": "contain",
+          "pixelated": true,
+          "alt": { "zh": "电鳗基础游动动画帧", "ja": "デンキウナギの通常移動フレーム", "en": "Electric eel basic movement frames" },
+          "caption": { "zh": "电鳗：基础游动 · 6 帧", "ja": "デンキウナギ：通常移動・6フレーム", "en": "Electric eel: basic movement · 6 frames" }
+        },
+        {
+          "src": "assets/projects/deep/deep-sprite-jellyfish-special.png",
+          "fit": "contain",
+          "pixelated": true,
+          "alt": { "zh": "水母特殊动作动画帧", "ja": "クラゲの特殊行動フレーム", "en": "Jellyfish special movement frames" },
+          "caption": { "zh": "水母：特殊动作 · 5 帧", "ja": "クラゲ：特殊行動・5フレーム", "en": "Jellyfish: special movement · 5 frames" }
+        },
+        {
+          "src": "assets/projects/deep/deep-sprite-ray-move.png",
+          "fit": "contain",
+          "pixelated": true,
+          "alt": { "zh": "鳐鱼基础游动动画帧", "ja": "エイの通常移動フレーム", "en": "Ray basic movement frames" },
+          "caption": { "zh": "鳐鱼：基础游动 · 5 帧", "ja": "エイ：通常移動・5フレーム", "en": "Ray: basic movement · 5 frames" }
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": {
+        "zh": "道具图标成品",
+        "ja": "完成済みアイテムアイコン",
+        "en": "Completed Item Icons"
+      },
+      "images": [
+        {
+          "src": "assets/projects/deep/deep-item-black-pearl.png",
+          "fit": "contain",
+          "pixelated": true,
+          "alt": { "zh": "黑珍珠像素图标", "ja": "黒真珠のピクセルアイコン", "en": "Black Pearl pixel icon" },
+          "caption": { "zh": "黑珍珠", "ja": "黒真珠", "en": "Black Pearl" }
+        },
+        {
+          "src": "assets/projects/deep/deep-item-oxygen-mask.png",
+          "fit": "contain",
+          "pixelated": true,
+          "alt": { "zh": "氧气面罩像素图标", "ja": "酸素マスクのピクセルアイコン", "en": "Oxygen Mask pixel icon" },
+          "caption": { "zh": "氧气面罩", "ja": "酸素マスク", "en": "Oxygen Mask" }
+        },
+        {
+          "src": "assets/projects/deep/deep-item-pirate-compass.png",
+          "fit": "contain",
+          "pixelated": true,
+          "alt": { "zh": "海盗罗盘像素图标", "ja": "海賊のコンパスのピクセルアイコン", "en": "Pirate Compass pixel icon" },
+          "caption": { "zh": "海盗罗盘", "ja": "海賊のコンパス", "en": "Pirate Compass" }
+        },
+        {
+          "src": "assets/projects/deep/deep-item-mirror-coral.png",
+          "fit": "contain",
+          "pixelated": true,
+          "alt": { "zh": "镜面珊瑚像素图标", "ja": "鏡のサンゴのピクセルアイコン", "en": "Mirror Coral pixel icon" },
+          "caption": { "zh": "镜面珊瑚", "ja": "鏡のサンゴ", "en": "Mirror Coral" }
+        },
+        {
+          "src": "assets/projects/deep/deep-item-volcano-core.png",
+          "fit": "contain",
+          "pixelated": true,
+          "alt": { "zh": "海底火山核心像素图标", "ja": "海底火山コアのピクセルアイコン", "en": "Submarine Volcano Core pixel icon" },
+          "caption": { "zh": "海底火山核心", "ja": "海底火山コア", "en": "Submarine Volcano Core" }
+        },
+        {
+          "src": "assets/projects/deep/deep-item-starfish-shield.png",
+          "fit": "contain",
+          "pixelated": true,
+          "alt": { "zh": "海星盾像素图标", "ja": "ヒトデの盾のピクセルアイコン", "en": "Starfish Shield pixel icon" },
+          "caption": { "zh": "海星盾", "ja": "ヒトデの盾", "en": "Starfish Shield" }
+        }
+      ]
+    },
+    {
+      "type": "gallery",
       "layout": "full",
       "title": {
         "zh": "生物 AI 状态流程",
@@ -188,44 +292,8 @@ window.PORTFOLIO_PROJECT = {
       ]
     },
     {
-      "type": "gallery",
-      "title": {
-        "zh": "视觉方向参考",
-        "ja": "ビジュアル方向の参考",
-        "en": "Visual Direction References"
-      },
-      "images": [
-        {
-          "src": "assets/projects/deep/deep-ruins.webp",
-          "alt": "Deep ruins concept",
-          "caption": {
-            "zh": "海底遗迹氛围图",
-            "ja": "海底遺跡の雰囲気",
-            "en": "Underwater ruins mood image"
-          }
-        },
-        {
-          "src": "assets/projects/deep/deep-creature.webp",
-          "alt": "Deep creature concept",
-          "caption": {
-            "zh": "深海生物概念",
-            "ja": "深海生物コンセプト",
-            "en": "Deep-sea creature concept"
-          }
-        },
-        {
-          "src": "assets/projects/deep/deep-depth.webp",
-          "alt": "Deep deep zone concept",
-          "caption": {
-            "zh": "深层区域视觉方向",
-            "ja": "深層エリアの方向性",
-            "en": "Deep-zone visual direction"
-          }
-        }
-      ]
-    },
-    {
       "type": "documents",
+      "placement": "after-intro",
       "title": {
         "zh": "日文企划书",
         "ja": "日本語企画書",

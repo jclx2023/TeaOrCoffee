@@ -245,66 +245,66 @@ window.PORTFOLIO_PROJECT = {
       "body": {
         "zh": [
           "角色与场景用于强化课堂语境。学生、老师和教室背景承担视觉识别功能，帮助玩家快速判断当前的答题环境、角色状态和对局阶段。",
-          "制作流程包括角色三视图整理、Blender 模型检查与调整、Unity 场景导入和 UI 层级整合。页面展示重点放在资产从概念设计到引擎落地的过程证据。"
+          "制作流程包括角色概念草图整理、Blender 模型检查与调整、Unity 场景导入和 UI 层级整合。页面展示重点放在资产从概念设计到引擎落地的过程证据。"
         ],
         "ja": [
           "キャラクターと教室空間は、現在の回答環境、プレイヤー状態、対局フェーズを読み取りやすくするために配置しています。",
-          "制作工程は、キャラクター三面図の整理、Blender モデルの確認と調整、Unity への導入、UI 階層の整理までを含みます。ページでは、コンセプトデザインからエンジン実装までの過程を確認できるようにしています。"
+          "制作工程は、キャラクターコンセプトスケッチの整理、Blender モデルの確認と調整、Unity への導入、UI 階層の整理までを含みます。ページでは、コンセプトデザインからエンジン実装までの過程を確認できるようにしています。"
         ],
         "en": [
           "Characters and classroom space define the quiz context. Students, the teacher, and the room background help players read the answer environment, character state, and match phase.",
-          "The production flow includes character turnaround sheets, Blender model checks and adjustments, Unity import, and UI hierarchy integration. The page shows the path from concept design to engine implementation."
+          "The production flow includes character concept sketches, Blender model checks and adjustments, Unity import, and UI hierarchy integration. The page shows the path from concept design to engine implementation."
         ]
       }
     },
     {
       "type": "gallery",
       "title": {
-        "zh": "角色概念与三视图",
-        "ja": "キャラクターコンセプトと三面図",
-        "en": "Character Concepts and Turnarounds"
+        "zh": "角色概念草图",
+        "ja": "キャラクターコンセプトスケッチ",
+        "en": "Character Concept Sketches"
       },
       "images": [
         {
           "src": "assets/projects/chinese/chinese-concept-teacher.webp",
           "fit": "contain",
           "alt": {
-            "zh": "教师角色正面、侧面与背面概念图",
-            "ja": "教師キャラクターの正面・側面・背面コンセプト",
-            "en": "Teacher character front, side, and back concept views"
+            "zh": "角色概念草图",
+            "ja": "キャラクターコンセプトスケッチ",
+            "en": "Character concept sketch"
           },
           "caption": {
-            "zh": "教师：用于模型比例、服装与轮廓确认的三视图",
-            "ja": "教師：モデルの比率、衣装、シルエットを確認する三面図",
-            "en": "Teacher turnaround for model proportion, clothing, and silhouette"
+            "zh": "角色概念草图",
+            "ja": "キャラクターコンセプトスケッチ",
+            "en": "Character concept sketch"
           }
         },
         {
           "src": "assets/projects/chinese/chinese-concept-female-student.webp",
           "fit": "contain",
           "alt": {
-            "zh": "女学生角色正面、侧面与背面概念图",
-            "ja": "女子生徒キャラクターの正面・側面・背面コンセプト",
-            "en": "Female student character front, side, and back concept views"
+            "zh": "角色概念草图",
+            "ja": "キャラクターコンセプトスケッチ",
+            "en": "Character concept sketch"
           },
           "caption": {
-            "zh": "女学生：以发型、制服和色彩区分课堂角色",
-            "ja": "女子生徒：髪型、制服、配色で教室内の役割を区別",
-            "en": "Female student concept using hair, uniform, and color for recognition"
+            "zh": "角色概念草图",
+            "ja": "キャラクターコンセプトスケッチ",
+            "en": "Character concept sketch"
           }
         },
         {
           "src": "assets/projects/chinese/chinese-concept-male-student.webp",
           "fit": "contain",
           "alt": {
-            "zh": "男学生角色正面、侧面与背面概念图",
-            "ja": "男子生徒キャラクターの正面・側面・背面コンセプト",
-            "en": "Male student character front, side, and back concept views"
+            "zh": "角色概念草图",
+            "ja": "キャラクターコンセプトスケッチ",
+            "en": "Character concept sketch"
           },
           "caption": {
-            "zh": "男学生：为 Blender 建模准备的比例与服装结构",
-            "ja": "男子生徒：Blender モデリング用の比率と衣装構造",
-            "en": "Male student proportions and clothing structure for Blender modeling"
+            "zh": "角色概念草图",
+            "ja": "キャラクターコンセプトスケッチ",
+            "en": "Character concept sketch"
           }
         }
       ]

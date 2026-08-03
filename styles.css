@@ -943,6 +943,10 @@ h3,
   grid-template-columns: minmax(0, 1fr);
 }
 
+.gallery-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .gallery-item {
   margin: 0;
   display: grid;
@@ -965,6 +969,12 @@ h3,
 
 .gallery img.gallery-image-wide {
   aspect-ratio: 5 / 1;
+}
+
+.gallery img.gallery-image-pixelated {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  padding: clamp(18px, 3vw, 34px);
 }
 
 .gallery img:hover,

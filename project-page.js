@@ -272,7 +272,11 @@ function renderBlock(block, lang) {
   }
 
   if (block.type === "gallery") {
-    const galleryClass = block.layout === "full" ? "gallery gallery-full" : "gallery";
+    const galleryClass = block.layout === "full"
+      ? "gallery gallery-full"
+      : block.layout === "two"
+        ? "gallery gallery-two"
+        : "gallery";
     return `
       <section class="article-block project-block project-block-gallery">
         ${titleHtml}
@@ -284,7 +288,8 @@ function renderBlock(block, lang) {
             const imageClasses = [
               "gallery-image",
               image.fit === "contain" ? "gallery-image-contain" : "",
-              image.ratio === "wide" ? "gallery-image-wide" : ""
+              image.ratio === "wide" ? "gallery-image-wide" : "",
+              image.pixelated ? "gallery-image-pixelated" : ""
             ].filter(Boolean).join(" ");
             return `
               <figure class="gallery-item">
@@ -347,6 +352,20 @@ function renderBlock(block, lang) {
   return "";
 }
 
+function orderProjectBlocks(blocks) {
+  const regularBlocks = (blocks || []).filter((block) => block.placement !== "after-intro");
+  const afterIntroBlocks = (blocks || []).filter((block) => block.placement === "after-intro");
+  if (!afterIntroBlocks.length) return regularBlocks;
+
+  const firstNonIntroIndex = regularBlocks.findIndex((block) => block.type !== "text");
+  const insertionIndex = firstNonIntroIndex < 0 ? regularBlocks.length : firstNonIntroIndex;
+  return [
+    ...regularBlocks.slice(0, insertionIndex),
+    ...afterIntroBlocks,
+    ...regularBlocks.slice(insertionIndex)
+  ];
+}
+
 function renderProjectPage(lang) {
   const root = document.getElementById("projectPageContent");
   if (!root || !project) return;
@@ -366,7 +385,7 @@ function renderProjectPage(lang) {
       </div>
       <img class="project-visual" src="${escapeHtml(project.cover)}" alt="${escapeHtml(displayTitle)}">
     </section>
-    ${(project.blocks || []).map((block) => renderBlock(block, lang)).join("")}
+    ${orderProjectBlocks(project.blocks).map((block) => renderBlock(block, lang)).join("")}
   `;
 }
 

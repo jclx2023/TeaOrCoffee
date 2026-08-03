@@ -235,6 +235,45 @@ window.PORTFOLIO_PROJECT = {
           "Program characters map desktop operation to deduction: opening a program is questioning, checking files is evidence review, and pop-ups can introduce new testimony. Low-resolution icons and old-system styling keep the desktop setting consistent."
         ]
       }
+    },
+    {
+      "type": "gallery",
+      "layout": "two",
+      "title": {
+        "zh": "对话与 LLM 状态实现",
+        "ja": "対話・LLM 状態実装",
+        "en": "Dialogue and LLM State Implementation"
+      },
+      "images": [
+        {
+          "src": "assets/projects/windows-murder/windows-code-llm-state.webp",
+          "fit": "contain",
+          "alt": {
+            "zh": "WindowsMurder LLM 状态控制代码截图",
+            "ja": "WindowsMurder の LLM 状態制御コード",
+            "en": "WindowsMurder LLM state-control code screenshot"
+          },
+          "caption": {
+            "zh": "LLM 状态控制：在等待 AI、显示回复、等待点击和等待输入之间切换对话 UI",
+            "ja": "LLM 状態制御：AI 待機、回答表示、クリック待機、入力待機に応じて対話 UI を切り替える",
+            "en": "LLM state control switches the dialogue UI between AI waiting, response display, click waiting, and player input"
+          }
+        },
+        {
+          "src": "assets/projects/windows-murder/windows-code-dialogue-manager.webp",
+          "fit": "contain",
+          "alt": {
+            "zh": "WindowsMurder 对话管理代码截图",
+            "ja": "WindowsMurder の対話管理コード",
+            "en": "WindowsMurder dialogue-manager code screenshot"
+          },
+          "caption": {
+            "zh": "对话管理：按当前语言选择脚本，校验对话入口，并把冲突请求加入等待队列",
+            "ja": "対話管理：現在言語に応じた台本選択、開始条件の検証、重複要求のキュー処理",
+            "en": "Dialogue management selects localized scripts, validates dialogue requests, and queues overlapping conversations"
+          }
+        }
+      ]
     }
   ]
 };

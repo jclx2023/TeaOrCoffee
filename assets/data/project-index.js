@@ -4,7 +4,7 @@ window.PORTFOLIO_PROJECT_INDEX = [
     "page": "projects/deep/index.html",
     "displayTitle": "Deep",
     "year": "2024",
-    "cover": "assets/projects/deep/deep-ruins.webp",
+    "cover": "assets/projects/deep/deep-concept-scene-color.webp",
     "tags": [
       "Unity",
       "GDD",
