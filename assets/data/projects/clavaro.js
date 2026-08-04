@@ -342,16 +342,16 @@ window.PORTFOLIO_PROJECT = {
       },
       "body": {
         "zh": [
-          "Clavaro 的 Mascot 是一只工程师螃蟹，同时担任电玩城和游戏内商店的老板。他的工装、护目镜、工具腰包和持有票券的机械钳，把机械维修、抓取装置与商店经济集中到同一个角色上。",
-          "他喜欢票券，负责用夸张而友好的动作迎接玩家、介绍商店和强化购买欲望。这个鲜明角色为原本偏系统驱动的抓取与构筑玩法提供稳定的视觉锚点，也加强了项目的记忆点。"
+          "Clavaro 的 Mascot 是一只工程师螃蟹，同时担任电玩城和游戏内商店的老板。他的工装、护目镜、工具腰包和持有金币的机械钳，把机械维修、抓取装置与商店经济集中到同一个角色上。",
+          "他喜欢金币，负责用夸张而友好的动作迎接玩家、介绍商店和强化购买欲望。这个鲜明角色为原本偏系统驱动的抓取与构筑玩法提供稳定的视觉锚点，也加强了项目的记忆点。"
         ],
         "ja": [
-          "Clavaro のマスコットはエンジニアのカニで、ゲームセンターとゲーム内ショップのオーナーも務めます。作業着、ゴーグル、工具袋、チケットを持つ機械アームによって、機械整備、キャッチ装置、ショップ経済を一人のキャラクターにまとめています。",
-          "チケットが大好きで、親しみやすく大きな身振りでプレイヤーを迎え、ショップや購入体験を案内します。システム中心のキャッチ＆構築ゲームに視覚的な軸を与え、作品の記憶性を高める役割です。"
+          "Clavaro のマスコットはエンジニアのカニで、ゲームセンターとゲーム内ショップのオーナーも務めます。作業着、ゴーグル、工具袋、コインを持つ機械アームによって、機械整備、キャッチ装置、ショップ経済を一人のキャラクターにまとめています。",
+          "コインが大好きで、親しみやすく大きな身振りでプレイヤーを迎え、ショップや購入体験を案内します。システム中心のキャッチ＆構築ゲームに視覚的な軸を与え、作品の記憶性を高める役割です。"
         ],
         "en": [
-          "Clavaro's mascot is an engineer crab who also owns the arcade and runs the in-game shop. His workwear, goggles, tool belt, and Ticket-holding mechanical claw connect machine maintenance, the grabbing device, and the shop economy in one character.",
-          "He loves Tickets and welcomes players with broad, friendly gestures while introducing the shop and reinforcing the purchase loop. This distinctive character gives the system-driven grab-and-build design a consistent visual anchor and makes the project easier to remember."
+          "Clavaro's mascot is an engineer crab who also owns the arcade and runs the in-game shop. His workwear, goggles, tool belt, and coin-holding mechanical claw connect machine maintenance, the grabbing device, and the shop economy in one character.",
+          "He loves coins and welcomes players with broad, friendly gestures while introducing the shop and reinforcing the purchase loop. This distinctive character gives the system-driven grab-and-build design a consistent visual anchor and makes the project easier to remember."
         ]
       }
     },
@@ -382,14 +382,14 @@ window.PORTFOLIO_PROJECT = {
           "src": "assets/projects/clavaro/clavaro-mascot-coins.webp",
           "fit": "contain",
           "alt": {
-            "zh": "举起带票券机械钳的工程师螃蟹老板",
-            "ja": "チケット付きの機械アームを掲げるエンジニア蟹の店主",
-            "en": "Engineer crab owner raising his Ticket-holding mechanical claw"
+            "zh": "举起带金币机械钳的工程师螃蟹老板",
+            "ja": "コイン付きの機械アームを掲げるエンジニア蟹の店主",
+            "en": "Engineer crab owner raising his coin-holding mechanical claw"
           },
           "caption": {
-            "zh": "票券姿态：突出老板身份、机械主题和对票券的喜爱",
-            "ja": "チケットポーズ：オーナー性、機械テーマ、チケット好きの性格を強調",
-            "en": "Ticket pose emphasizing his owner role, mechanical theme, and love of Tickets"
+            "zh": "金币姿态：突出老板身份、机械主题和对金币的喜爱",
+            "ja": "コインポーズ：オーナー性、機械テーマ、コイン好きの性格を強調",
+            "en": "Coin pose emphasizing his owner role, mechanical theme, and love of coins"
           }
         }
       ]
