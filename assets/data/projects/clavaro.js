@@ -71,19 +71,41 @@ window.PORTFOLIO_PROJECT = {
     {
       "type": "text",
       "title": {
+        "zh": "故事背景",
+        "ja": "ストーリー背景",
+        "en": "Story Background"
+      },
+      "body": {
+        "zh": [
+          "一家老旧电玩城因为客流减少，即将被迫关门。为了挽救店铺，工程师螃蟹老板拿出自己改造的抓取机，举办一场不断提高目标分数的高分挑战。玩家每轮达到营业目标后，可以用获得的票券向老板购买新球、遗物和机器零件，逐渐改造球池并建立更强的得分组合。螃蟹老板一边帮助玩家维修机器，一边不断提高挑战价格和目标分数——毕竟，比起拯救电玩城，他似乎更喜欢不断增加的票券。"
+        ],
+        "ja": [
+          "客足が減った古いゲームセンターは、閉店を迫られていました。店を救うため、エンジニアのカニ店主は自ら改造したクレーンゲームを持ち出し、目標スコアが次第に上がるハイスコアチャレンジを開催します。プレイヤーは各ラウンドの営業目標を達成すると、獲得したチケットを使って店主から新しいボール、レリック、機械パーツを購入し、ボールプールを改造しながら、より強力な得点コンボを構築していきます。カニ店主は機械の修理を手伝う一方で、挑戦料金と目標スコアを次々と引き上げます。何しろ彼は、ゲームセンターを救うことより、増え続けるチケットの方が好きなようです。"
+        ],
+        "en": [
+          "An old arcade is facing closure as fewer customers come through its doors. To save the business, its engineer crab owner brings out a claw machine he rebuilt himself and launches a high-score challenge with ever-rising targets. After meeting each round's business goal, the player can spend earned Tickets at the owner's shop on new balls, relics, and machine parts, gradually modifying the ball pool and creating stronger scoring combinations. The crab owner helps maintain the machine while continually raising the cost of each challenge and its target score—after all, he seems to care more about his growing pile of Tickets than saving the arcade."
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "title": {
         "zh": "设计意图",
         "ja": "設計意図",
         "en": "Design Intent"
       },
       "body": {
         "zh": [
-          "项目参考了 Balatro 的短回合节奏、数值增长和连锁反馈，但交互载体改为钩爪操作与球池构筑。结果由抓取表现、球体组合和遗物触发共同决定。"
+          "项目参考了 Balatro 的短回合节奏、数值增长和连锁反馈，但交互载体改为钩爪操作与球池构筑。结果由抓取表现、球体组合和遗物触发共同决定。",
+          "Omelet You Cook 提供了商店信息组织的参考：购买候选、价格、刷新操作和当前构筑可以在同一画面中并列呈现。"
         ],
         "ja": [
-          "Balatro からは、短いラウンド、数値成長、効果連鎖のテンポを参考にしました。Clavaro はクレーン操作とボールプール構築を交互に扱い、キャッチ結果、ボール構成、レリック発動で得点を決めます。"
+          "Balatro からは、短いラウンド、数値成長、効果連鎖のテンポを参考にしました。Clavaro はクレーン操作とボールプール構築を交互に扱い、キャッチ結果、ボール構成、レリック発動で得点を決めます。",
+          "Omelet You Cook からは、購入候補、価格、リロール操作、現在の構成を同じショップ画面で並べる情報整理を参考にしました。"
         ],
         "en": [
-          "The project references Balatro's short round structure, numerical growth, and chained feedback. Clavaro changes the interaction layer to claw control and ball-pool construction, so the result comes from grab performance, ball composition, and relic triggers."
+          "The project references Balatro's short round structure, numerical growth, and chained feedback. Clavaro changes the interaction layer to claw control and ball-pool construction, so the result comes from grab performance, ball composition, and relic triggers.",
+          "Omelet You Cook informed the shop's information structure by showing purchase candidates, prices, rerolls, and the current build together on one screen."
         ]
       }
     },
@@ -156,6 +178,65 @@ window.PORTFOLIO_PROJECT = {
             "zh": "球池和遗物组合改变抓取价值",
             "ja": "ボールプールとレリックが価値を変える",
             "en": "Ball pool and relics change each grab's value"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "layout": "two",
+      "title": {
+        "zh": "灵感来源参考",
+        "ja": "インスピレーション参考",
+        "en": "Inspiration References"
+      },
+      "images": [
+        {
+          "src": "assets/projects/clavaro/clavaro-reference-balatro.webp",
+          "alt": {
+            "zh": "Balatro 游戏界面参考图",
+            "ja": "Balatro のゲーム画面参考",
+            "en": "Balatro gameplay reference"
+          },
+          "source": {
+            "site": "Steam",
+            "title": "Balatro",
+            "author": "LocalThunk",
+            "accessed": {
+              "zh": "2026-08-04",
+              "ja": "2026年8月4日",
+              "en": "August 4, 2026"
+            },
+            "url": "https://store.steampowered.com/app/2379780/Balatro/"
+          },
+          "caption": {
+            "zh": "Balatro：短回合目标、数值增长、倍率与连锁反馈参考",
+            "ja": "Balatro：短いラウンド目標、数値成長、倍率、効果連鎖の参考",
+            "en": "Balatro: reference for short-round goals, numerical growth, multipliers, and chained effects"
+          }
+        },
+        {
+          "src": "assets/projects/clavaro/clavaro-reference-omelet-you-cook.webp",
+          "alt": {
+            "zh": "Omelet You Cook 商店界面参考图",
+            "ja": "Omelet You Cook のショップ画面参考",
+            "en": "Omelet You Cook shop-interface reference"
+          },
+          "source": {
+            "site": "Steam",
+            "title": "Omelet You Cook",
+            "author": "Dan Schumacher / Hjalte Tagmose",
+            "accessed": {
+              "zh": "2026-08-04",
+              "ja": "2026年8月4日",
+              "en": "August 4, 2026"
+            },
+            "url": "https://store.steampowered.com/app/3205380/"
+          },
+          "caption": {
+            "zh": "Omelet You Cook：商店候选、价格、刷新与当前构筑的信息布局参考",
+            "ja": "Omelet You Cook：購入候補、価格、リロール、現在構成の情報配置参考",
+            "en": "Omelet You Cook: reference for arranging shop choices, prices, rerolls, and the current build"
           }
         }
       ]
@@ -261,16 +342,16 @@ window.PORTFOLIO_PROJECT = {
       },
       "body": {
         "zh": [
-          "Clavaro 的 Mascot 是一只工程师螃蟹，同时担任电玩城和游戏内商店的老板。他的工装、护目镜、工具腰包和机械金币钳，把机械维修、抓取装置与商店经济集中到同一个角色上。",
-          "他喜欢金币，负责用夸张而友好的动作迎接玩家、介绍商店和强化购买欲望。这个鲜明角色为原本偏系统驱动的抓取与构筑玩法提供稳定的视觉锚点，也加强了项目的记忆点。"
+          "Clavaro 的 Mascot 是一只工程师螃蟹，同时担任电玩城和游戏内商店的老板。他的工装、护目镜、工具腰包和持有票券的机械钳，把机械维修、抓取装置与商店经济集中到同一个角色上。",
+          "他喜欢票券，负责用夸张而友好的动作迎接玩家、介绍商店和强化购买欲望。这个鲜明角色为原本偏系统驱动的抓取与构筑玩法提供稳定的视觉锚点，也加强了项目的记忆点。"
         ],
         "ja": [
-          "Clavaro のマスコットはエンジニアのカニで、ゲームセンターとゲーム内ショップのオーナーも務めます。作業着、ゴーグル、工具袋、コインを持つ機械アームによって、機械整備、キャッチ装置、ショップ経済を一人のキャラクターにまとめています。",
-          "コインが大好きで、親しみやすく大きな身振りでプレイヤーを迎え、ショップや購入体験を案内します。システム中心のキャッチ＆構築ゲームに視覚的な軸を与え、作品の記憶性を高める役割です。"
+          "Clavaro のマスコットはエンジニアのカニで、ゲームセンターとゲーム内ショップのオーナーも務めます。作業着、ゴーグル、工具袋、チケットを持つ機械アームによって、機械整備、キャッチ装置、ショップ経済を一人のキャラクターにまとめています。",
+          "チケットが大好きで、親しみやすく大きな身振りでプレイヤーを迎え、ショップや購入体験を案内します。システム中心のキャッチ＆構築ゲームに視覚的な軸を与え、作品の記憶性を高める役割です。"
         ],
         "en": [
-          "Clavaro's mascot is an engineer crab who also owns the arcade and runs the in-game shop. His workwear, goggles, tool belt, and coin-holding mechanical claw connect machine maintenance, the grabbing device, and the shop economy in one character.",
-          "He loves coins and welcomes players with broad, friendly gestures while introducing the shop and reinforcing the purchase loop. This distinctive character gives the system-driven grab-and-build design a consistent visual anchor and makes the project easier to remember."
+          "Clavaro's mascot is an engineer crab who also owns the arcade and runs the in-game shop. His workwear, goggles, tool belt, and Ticket-holding mechanical claw connect machine maintenance, the grabbing device, and the shop economy in one character.",
+          "He loves Tickets and welcomes players with broad, friendly gestures while introducing the shop and reinforcing the purchase loop. This distinctive character gives the system-driven grab-and-build design a consistent visual anchor and makes the project easier to remember."
         ]
       }
     },
@@ -301,14 +382,14 @@ window.PORTFOLIO_PROJECT = {
           "src": "assets/projects/clavaro/clavaro-mascot-coins.webp",
           "fit": "contain",
           "alt": {
-            "zh": "举起带金币机械钳的工程师螃蟹老板",
-            "ja": "コイン付きの機械アームを掲げるエンジニア蟹の店主",
-            "en": "Engineer crab owner raising his coin-holding mechanical claw"
+            "zh": "举起带票券机械钳的工程师螃蟹老板",
+            "ja": "チケット付きの機械アームを掲げるエンジニア蟹の店主",
+            "en": "Engineer crab owner raising his Ticket-holding mechanical claw"
           },
           "caption": {
-            "zh": "金币姿态：突出老板身份、机械主题和对金币的喜爱",
-            "ja": "コインポーズ：オーナー性、機械テーマ、コイン好きの性格を強調",
-            "en": "Coin pose emphasizing his owner role, mechanical theme, and love of coins"
+            "zh": "票券姿态：突出老板身份、机械主题和对票券的喜爱",
+            "ja": "チケットポーズ：オーナー性、機械テーマ、チケット好きの性格を強調",
+            "en": "Ticket pose emphasizing his owner role, mechanical theme, and love of Tickets"
           }
         }
       ]
