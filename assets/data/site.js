@@ -1,6 +1,6 @@
 window.PORTFOLIO_SITE = {
   defaultLang: "zh",
-  skills: ["Unity", "Godot", "C#", "Game Design"],
+  skills: ["Unity", "Godot", "C#", "Game Design", "Photoshop", "Premiere Pro"],
   links: {
     email: "TeaOrCoffee2024@163.com",
     github: "https://github.com/jclx2023"
@@ -20,7 +20,7 @@ window.PORTFOLIO_SITE = {
       worksLead: "四个项目按项目页结构整理，包含设计目标、系统结构、流程截图与开发证据。点击作品可查看详细内容。",
       profileEyebrow: "PROFILE",
       profileTitle: "PROFILE",
-      profileLead: "申请方向为游戏设计。作品覆盖系统策划、Unity 原型、复古界面交互、多语言文本与可运行游戏开发。",
+      profileLead: "申请方向为游戏设计。作品覆盖系统策划、Unity 原型、复古界面交互与可运行游戏开发。",
       profileDirection: "申请方向",
       profileSkills: "技能栈",
       summaryMajor: "游戏设计",
@@ -46,7 +46,7 @@ window.PORTFOLIO_SITE = {
       worksLead: "4 つのプロジェクトを、設計目標、システム構造、画面フロー、制作記録に分けて整理しています。作品をクリックすると詳細を確認できます。",
       profileEyebrow: "PROFILE",
       profileTitle: "PROFILE",
-      profileLead: "志望分野はゲームデザイン。システム企画、Unity プロトタイプ、レトロ UI、多言語テキスト、プレイ可能なゲーム開発に取り組んでいます。",
+      profileLead: "志望分野はゲームデザイン。システム企画、Unity プロトタイプ、レトロ UI、プレイ可能なゲーム開発に取り組んでいます。",
       profileDirection: "志望分野",
       profileSkills: "スキル",
       summaryMajor: "ゲームデザイン",
@@ -72,7 +72,7 @@ window.PORTFOLIO_SITE = {
       worksLead: "Four projects are organized by design goals, system structure, screen flow, and production evidence. Open a project to review the details.",
       profileEyebrow: "PROFILE",
       profileTitle: "PROFILE",
-      profileLead: "Applying for game design. The works cover system design, Unity prototypes, retro UI interaction, localization, and playable game development.",
+      profileLead: "Applying for game design. The works cover system design, Unity prototypes, retro UI interaction, and playable game development.",
       profileDirection: "Direction",
       profileSkills: "Skills",
       summaryMajor: "Game Design",
