@@ -389,7 +389,7 @@ function renderProjectPage(lang) {
   const displayTitle = project.displayTitle || project.id;
   const subtitle = meta.subtitle || "";
 
-  document.title = `${displayTitle} | Xu Bang Portfolio`;
+  document.title = `${displayTitle} | ${site.pageTitleSuffix || "Xu Bang Portfolio"}`;
   root.innerHTML = `
     <section class="project-hero">
       <div class="project-hero-copy">

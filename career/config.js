@@ -56,6 +56,7 @@
   const baseSite = window.PORTFOLIO_SITE;
   window.PORTFOLIO_SITE = {
     ...baseSite,
+    pageTitleSuffix: "游戏策划作品集",
     languageStorageKey: "portfolioCareerLang",
     skills: ["Unity", "C#", "Game Design", "Godot"],
     i18n: Object.fromEntries(Object.entries(baseSite.i18n).map(([lang, labels]) => [
@@ -141,8 +142,41 @@
   const details = projects[project.id];
   project.blocks = project.blocks.map((block) => {
     if (block.type === "embedVideo") return { ...block, id: "gameplay-demo" };
-    // Keep the original documents available after the design content in the career edition.
-    if (project.id === "deep" && block.type === "documents") return { ...block, placement: undefined };
+    if (project.id === "deep" && block.type === "text" && block.title?.zh === "项目概述") {
+      return {
+        ...block,
+        body: {
+          zh: block.body.zh.map((paragraph) => paragraph.replace("三份日文企划书", "三份中文策划案")),
+          ja: block.body.ja.map((paragraph) => paragraph.replace("3冊の日本語企画書", "3冊の中国語企画書")),
+          en: block.body.en.map((paragraph) => paragraph.replace("three Japanese design documents", "three Chinese design documents"))
+        }
+      };
+    }
+    if (project.id === "deep" && block.type === "documents") {
+      const files = {
+        "assets/documents/deep/deep-system-plan-ja.pdf": { filename: "deep-system-plan-zh-v2.pdf", pages: 26, title: "DEEP 系统策划案" },
+        "assets/documents/deep/deep-player-creatures-plan-ja.pdf": { filename: "deep-player-creatures-plan-zh-v2.pdf", pages: 41, title: "DEEP 生物策划案" },
+        "assets/documents/deep/deep-enemies-plan-ja.pdf": { filename: "deep-enemies-plan-zh-v2.pdf", pages: 35, title: "DEEP 敌方生物策划案" }
+      };
+      return {
+        ...block,
+        placement: undefined,
+        title: { zh: "中文策划案", ja: "中国語企画書", en: "Chinese Design Documents" },
+        documents: block.documents.map((document) => {
+          const file = files[document.pdf];
+          return {
+            ...document,
+            title: { ...document.title, zh: file.title },
+            pdf: `career/assets/deep/${file.filename}`,
+            meta: {
+              zh: `中文 PDF · ${file.pages} 页`,
+              ja: `中国語 PDF・${file.pages}ページ`,
+              en: `Chinese PDF · ${file.pages} pages`
+            }
+          };
+        })
+      };
+    }
     return block;
   });
 
