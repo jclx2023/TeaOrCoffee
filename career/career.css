@@ -1,0 +1,122 @@
+.career-site .hero-native {
+  line-height: 1.5;
+}
+
+.career-site main > section[id] {
+  scroll-margin-top: 128px;
+}
+
+.career-site .hero-actions .button {
+  font-family: var(--text-font);
+  font-size: 1rem;
+}
+
+.career-site .work-card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.career-site .work-card h3 {
+  margin-bottom: 16px;
+}
+
+.career-site .work-card-role {
+  border-left: 4px solid var(--cyan);
+  padding-left: 10px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.career-site .work-card .tag-row {
+  margin-top: 0;
+}
+
+.career-site .card-footer {
+  padding-top: 8px;
+}
+
+.career-site .profile-main {
+  align-self: center;
+}
+
+.career-site .profile-dates {
+  font-family: var(--mono-font);
+}
+
+.career-site .profile-main .button {
+  margin-top: 10px;
+}
+
+.career-site .profile-list strong {
+  overflow-wrap: anywhere;
+}
+
+.career-site .project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.career-site .project-actions .button {
+  font-family: var(--text-font);
+  font-size: 1rem;
+}
+
+.career-site .download-note {
+  margin: 16px 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.career-site .contact-email {
+  width: fit-content;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 1060px) {
+  .career-site .hero-model {
+    min-height: 280px;
+  }
+
+  .career-site .model-stage {
+    width: min(70vw, 420px);
+    height: 320px;
+  }
+}
+
+@media (max-width: 720px) {
+  .career-site .nav-links a {
+    font-size: clamp(0.75rem, 3.4vw, 0.95rem);
+    white-space: nowrap;
+  }
+
+  .career-site .hero-model {
+    min-height: 190px;
+  }
+
+  .career-site .model-stage {
+    width: 220px;
+    height: 220px;
+  }
+
+  .career-site .hero-actions {
+    gap: 12px;
+  }
+
+  .career-site .hero-actions .button {
+    padding-inline: 12px;
+  }
+
+  .career-site .profile-section {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .career-site .contact-links .button,
+  .career-site .profile-main .button {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    text-align: center;
+  }
+}

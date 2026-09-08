@@ -100,6 +100,7 @@ function setLang(lang, shouldSave = true) {
 function renderMetaRow(meta, lang) {
   const labels = getLabels(lang);
   const rows = [
+    ["production", labels.production],
     ["role", labels.role],
     ["status", labels.status],
     ["platform", labels.platform],
@@ -109,7 +110,7 @@ function renderMetaRow(meta, lang) {
   return rows
     .filter(([key]) => meta[key])
     .map(([key, label]) => {
-      if (key === "status" && project?.action?.url) {
+      if (key === "status" && project?.action?.url && !project.actions?.length) {
         const actionLabel = textFor(project.action.label, lang, label || "Status");
         return `<a class="meta-pill project-status-link" href="${escapeHtml(project.action.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(actionLabel)}</a>`;
       }
@@ -179,7 +180,7 @@ function renderEmbedVideoBlock(block, lang, titleHtml) {
   const caption = textFor(block.caption, lang);
 
   return `
-    <section class="article-block project-block project-block-media project-block-video">
+    <section${block.id ? ` id="${escapeHtml(block.id)}"` : ""} class="article-block project-block project-block-media project-block-video">
       ${titleHtml}
       <div class="embed-frame">
         <iframe src="${escapeHtml(url)}" title="${escapeHtml(title)}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -366,6 +367,20 @@ function orderProjectBlocks(blocks) {
   ];
 }
 
+function renderProjectActions(lang) {
+  if (!project.actions?.length) return "";
+
+  const note = typeof project.downloadNote === "string" ? project.downloadNote : project.downloadNote?.[lang];
+  return `
+    <div class="project-actions">
+      ${project.actions.map((action) => `
+        <a class="button ${action.primary ? "primary" : "ghost"}" href="${escapeHtml(textFor(action.url, lang))}"${action.external ? ' target="_blank" rel="noopener noreferrer"' : ""}>${escapeHtml(textFor(action.label, lang))}</a>
+      `).join("")}
+    </div>
+    ${note ? `<p class="download-note">${escapeHtml(note)}</p>` : ""}
+  `;
+}
+
 function renderProjectPage(lang) {
   const root = document.getElementById("projectPageContent");
   if (!root || !project) return;
@@ -382,6 +397,7 @@ function renderProjectPage(lang) {
         <h1>${escapeHtml(displayTitle)}</h1>
         ${subtitle ? `<p class="hero-lead">${escapeHtml(subtitle)}</p>` : ""}
         <div class="meta-row">${renderMetaRow(meta, lang)}</div>
+        ${renderProjectActions(lang)}
       </div>
       <img class="project-visual" src="${escapeHtml(project.cover)}" alt="${escapeHtml(displayTitle)}">
     </section>

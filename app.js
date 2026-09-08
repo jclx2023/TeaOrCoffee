@@ -54,6 +54,7 @@ function renderWorks(lang) {
             <h3>${escapeHtml(displayTitle)}</h3>
             <p>${escapeHtml(cardText)}</p>
           </div>
+          ${project.cardRole ? `<p class="work-card-role">${escapeHtml(textFor(project.cardRole, lang))}</p>` : ""}
           <div class="tag-row">${(project.tags || []).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div>
           <div class="card-footer">
             <span class="meta-pill">${escapeHtml(subtitle)}</span>

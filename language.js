@@ -1,5 +1,5 @@
 (function setupPortfolioLanguage() {
-  const storageKey = "portfolioLang";
+  const storageKey = window.PORTFOLIO_SITE?.languageStorageKey || "portfolioLang";
   const chineseTimezones = new Set([
     "Asia/Shanghai",
     "Asia/Hong_Kong",

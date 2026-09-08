@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <base href="../" />
+    <meta name="description" content="徐邦的个人游戏作品集，展示系统策划、技术策划与 Unity 游戏原型，以及个人简历和联系方式。" />
+    <title>徐邦 | 系统策划 · 技术策划作品集</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23baff29'/%3E%3Cpath d='M8 8h48v48H8z' fill='none' stroke='%23111111' stroke-width='6'/%3E%3Ctext x='32' y='40' font-size='20' font-family='monospace' font-weight='900' text-anchor='middle' fill='%23111111'%3EXB%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="career/career.css" />
+  </head>
+  <body class="career-site">
+    <header class="site-header">
+      <a class="brand" href="career/index.html#top" aria-label="Home">
+        <span class="brand-mark">XB</span>
+        <span>TeaOrCoffee</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="career/index.html#works" data-i18n="navWorks">作品</a>
+        <a href="career/index.html#profile" data-i18n="navProfile">关于</a>
+        <a href="career/index.html#contact" data-i18n="navContact">联系</a>
+      </nav>
+      <div class="language-switch" aria-label="Language">
+        <button type="button" data-lang="zh" aria-pressed="true">中</button>
+        <button type="button" data-lang="ja" aria-pressed="false">日</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">GAME DESIGN PORTFOLIO</p>
+          <h1 data-i18n="heroTitle">XU BANG</h1>
+          <p class="hero-native" data-i18n="nativeName">徐邦 / 系统策划 · 技术策划</p>
+          <p class="hero-lead" data-i18n="heroLead">关注玩法机制、系统规则与交互体验，使用 Unity 和 C# 将设计落实为可运行的游戏原型。作品涵盖 Roguelike 构筑、多人对战与 AI 对话解谜。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="career/index.html#works" data-i18n="viewWorks">查看作品</a>
+            <a class="button ghost" href="career/assets/xu-bang-resume-2609.pdf" target="_blank" rel="noopener noreferrer" data-i18n="viewResume">查看简历 PDF</a>
+            <a class="button ghost" href="career/index.html#contact" data-i18n="contactMe">联系我</a>
+          </div>
+          <div class="signal-row" aria-label="Skills">
+            <span>Unity</span><span>C#</span><span>Game Design</span><span>Godot</span>
+          </div>
+        </div>
+        <div class="hero-model" aria-label="GameBoy 3D model">
+          <div class="model-stage gameboy-stage" id="modelStage">
+            <canvas class="gameboy-canvas" id="gameboyCanvas" aria-label="GameBoy 3D model"></canvas>
+            <div class="model-loading" id="modelLoading">LOADING OBJ</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee-strip" aria-label="Portfolio signal">
+        <div class="marquee-track">
+          <span>GAME DESIGN / SYSTEMS DESIGN / UNITY / C# / ROGUELIKE / RETRO UI / PLAYABLE PROTOTYPES / PORTFOLIO /</span>
+          <span aria-hidden="true">GAME DESIGN / SYSTEMS DESIGN / UNITY / C# / ROGUELIKE / RETRO UI / PLAYABLE PROTOTYPES / PORTFOLIO /</span>
+        </div>
+      </section>
+
+      <section class="section" id="works">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="worksEyebrow">SELECTED WORKS</p>
+          <h2 data-i18n="worksTitle">WORKS</h2>
+          <p data-i18n="worksLead">围绕系统设计与玩法实现，展示四个项目的设计思路、个人职责和制作成果。</p>
+        </div>
+        <div class="works-grid" id="worksGrid"></div>
+      </section>
+
+      <section class="section profile-section" id="profile">
+        <div class="profile-main">
+          <p class="eyebrow" data-i18n="profileEyebrow">PROFILE</p>
+          <h2 data-i18n="profileTitle">徐邦</h2>
+          <p data-i18n="profileLead">浙江工商大学 · 电子信息技术 · 本科</p>
+          <p class="profile-dates">2021.09 — 2026.06</p>
+          <a class="button ghost" href="career/assets/xu-bang-resume-2609.pdf" download="徐邦个人简历2609.pdf" data-i18n="downloadResume">下载简历 PDF</a>
+        </div>
+        <div class="profile-list">
+          <div>
+            <span data-i18n="profileDirection">求职方向</span>
+            <strong data-i18n="summaryMajor">系统策划 / 技术策划</strong>
+          </div>
+          <div>
+            <span data-i18n="profileSkills">技能栈</span>
+            <strong>Unity / C# / Godot / Office / Photoshop / Premiere Pro</strong>
+          </div>
+          <div>
+            <span data-i18n="profileEnglish">英语</span>
+            <strong data-i18n="englishLevel">托福 5 分 · CET-6 555 分</strong>
+          </div>
+          <div>
+            <span data-i18n="profileJapanese">日语</span>
+            <strong data-i18n="japaneseLevel">JLPT N2 160 分</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <p class="eyebrow" data-i18n="contactEyebrow">CONTACT</p>
+        <h2 data-i18n="contactTitle">CONTACT</h2>
+        <a class="contact-email" href="mailto:TeaOrCoffee2024@163.com">TeaOrCoffee2024@163.com</a>
+        <div class="contact-links">
+          <a class="button primary" href="mailto:TeaOrCoffee2024@163.com">Email</a>
+          <a class="button ghost" href="https://github.com/jclx2023" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="button ghost" href="career/assets/xu-bang-resume-2609.pdf" target="_blank" rel="noopener noreferrer" data-i18n="viewResume">查看简历 PDF</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>© 2026 Xu Bang</span></footer>
+
+    <script src="assets/data/site.js"></script>
+    <script src="assets/data/project-index.js"></script>
+    <script src="career/config.js"></script>
+    <script src="language.js"></script>
+    <script src="app.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="gameboy-model.js"></script>
+  </body>
+</html>
