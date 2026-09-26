@@ -82,6 +82,7 @@ function setLang(lang, shouldSave = true) {
 
   renderSkills();
   renderWorks(safeLang);
+  window.dispatchEvent(new CustomEvent("portfolio:languagechange", { detail: { lang: safeLang } }));
 }
 
 function setupLanguageSwitch() {
